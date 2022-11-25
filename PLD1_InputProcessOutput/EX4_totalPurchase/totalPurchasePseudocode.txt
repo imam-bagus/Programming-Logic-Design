@@ -1,0 +1,32 @@
+START
+    Declaration
+        Number item1
+        Number item2
+        Number item3
+        Number item4
+        Number item5
+        Number subTotal
+        Number salesTax
+        Number total
+        Number tax = 0.06
+
+    Display "Enter a Price Item 1: $"
+    Input item1
+    Display "Enter a Price Item 2: $"
+    Input item2
+    Display "Enter a Price Item 3: $"
+    Input item3
+    Display "Enter a Price Item 4: $"
+    Input item4
+    Display "Enter a Price Item 5: $"
+    Input item5
+
+    Set subtotal = item1 + item2 + item3 + item4 + item5
+    Set salesTax = subTotal * tax
+    Set total    = subTotal + salesTax
+
+    Display "subtotal   : $", subTotal
+    Display "sales tax  : $", salesTax
+    Display "Total      : $", total
+
+STOP

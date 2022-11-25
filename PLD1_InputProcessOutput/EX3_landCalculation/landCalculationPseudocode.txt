@@ -1,0 +1,11 @@
+START
+    Declaration
+        number squareFeet
+        number acre
+    
+    Get squareFeet
+
+    Set acre = squareFeet / 43,560
+
+    Display "Acres :",  acre
+STOP

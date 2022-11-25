@@ -1,0 +1,12 @@
+START
+    Declaration
+        Number profit
+        Number totalSales
+
+    Display "Enter a total sales : $"
+    Input totalSales
+
+    Set profit = totalSales * 0.23
+
+    Display "Profit : $", profit
+STOP

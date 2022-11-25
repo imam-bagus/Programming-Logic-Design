@@ -1,0 +1,24 @@
+START
+    Declaration
+        Number stateTax = 0.04
+        Number countryTax = 0.02
+        Number totalStateTax
+        Number totalCountryTax
+        Number purchase
+        Number totalSalesTax
+        Number totalSale
+    
+    Display "Amount purchase : $"
+    Input purchase
+
+    Set totalStateTax = purchase * stateTax
+    Set totalCountryTax = purchase * countryTax
+    Set totalSalesTax = totalStateTax + totalCountryTax   
+    Set totalSale = purchase + totalSalesTax
+
+    Display "Purchase          : $", purchase
+    Display "State Sales Tax   : $", totalStateTax
+    Display "Country Sales Tax : $", totalCountryTax
+    Display "Total Sales Tax   : $", totalSalesTax
+    Display "Total Sale        : $", totalSale
+STOP

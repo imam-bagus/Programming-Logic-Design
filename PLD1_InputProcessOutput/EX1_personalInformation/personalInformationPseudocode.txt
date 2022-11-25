@@ -1,0 +1,19 @@
+START
+	Declaration
+		String name 	= "Imam Bagus"
+		String city 	= "Bekasi"
+		String state	= "Indonesia"
+		Number zip		= "17435"
+		String telpNum	= "089898989898"
+		String colMajor	= "Information System"
+
+
+	Display "Name			: ", name
+	Display "City 			: ", city
+	Display "State 			: ", state
+	Display "ZIP   			: ", zip
+	Display "Telphone		: ", telpNum
+	Display "College major  : ", colMajor
+STOP
+		
+		

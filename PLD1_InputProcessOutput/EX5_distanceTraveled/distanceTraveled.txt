@@ -1,0 +1,13 @@
+START
+    Declaration
+        Number distance
+        Number speed = 60
+        Number time
+    
+    Display "Enter a time :"
+    Input time
+
+    Set distance = speed * time
+
+    Display "Distance the car travel in", time, " hours is : ", distance 
+STOP

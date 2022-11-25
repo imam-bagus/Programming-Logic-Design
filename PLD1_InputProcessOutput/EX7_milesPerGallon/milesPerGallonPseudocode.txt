@@ -1,0 +1,15 @@
+START
+    Declaration
+        Number MPG
+        Number milesDriven
+        Number gallons
+    
+    Display "Miles Driven : "
+    Input milesDriven
+    Display "Gallons Gas : "
+    Input gallons
+
+    Set MPG = milesDriven / gallons
+
+    Display "Miles-per-Gallon : ", MPG
+STOP
