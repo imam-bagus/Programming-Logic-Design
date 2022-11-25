@@ -1,4 +1,5 @@
 START
+	// input
 	Declaration
 		String name 	= "Imam Bagus"
 		String city 	= "Bekasi"
@@ -7,7 +8,7 @@ START
 		String telpNum	= "089898989898"
 		String colMajor	= "Information System"
 
-
+	// Output
 	Display "Name			: ", name
 	Display "City 			: ", city
 	Display "State 			: ", state

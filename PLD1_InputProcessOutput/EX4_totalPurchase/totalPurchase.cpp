@@ -7,6 +7,7 @@ int main()
     int item1, item2, item3, item4, item5, subTotal, salesTax, total;
     float tax = 0.06;
 
+    // Input
     cout << "Enter a Price Item 1 : $";
     cin >> item1;
     cout << "Enter a Price Item 2 : $";
@@ -18,10 +19,12 @@ int main()
     cout << "Enter a Price Item 5 : $";
     cin >> item5;
 
+    // Process
     subTotal = item1 + item2 + item3 + item4 + item5;
     salesTax = subTotal * tax;
     total = subTotal + salesTax;
 
+    // Output
     cout << "Subtotal   : $" << subTotal << endl;
     cout << "Sales Tax  : $" << salesTax << endl;
     cout << "Total      : $" << total << endl;

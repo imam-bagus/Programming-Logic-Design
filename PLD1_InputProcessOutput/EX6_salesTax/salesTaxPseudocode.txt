@@ -8,14 +8,17 @@ START
         Number totalSalesTax
         Number totalSale
     
+    // Input
     Display "Amount purchase : $"
     Input purchase
 
+    // Process
     Set totalStateTax = purchase * stateTax
     Set totalCountryTax = purchase * countryTax
     Set totalSalesTax = totalStateTax + totalCountryTax   
     Set totalSale = purchase + totalSalesTax
 
+    // Output
     Display "Purchase          : $", purchase
     Display "State Sales Tax   : $", totalStateTax
     Display "Country Sales Tax : $", totalCountryTax

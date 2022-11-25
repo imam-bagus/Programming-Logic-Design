@@ -4,10 +4,13 @@ START
         Number speed = 60
         Number time
     
+    // Input
     Display "Enter a time :"
     Input time
 
+    // Process
     Set distance = speed * time
 
+    // Output
     Display "Distance the car travel in", time, " hours is : ", distance 
 STOP

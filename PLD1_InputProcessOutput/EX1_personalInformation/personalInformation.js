@@ -1,10 +1,10 @@
-// declaration
-var name = "Imam Bagus";
-var city = "Bekasi";
-var state = "Indonesia";
-var zip = 17435;
-var telpNum = "089898989898";
-var colMajor = "Information System";
+// Input
+var name = "Imam Bagus",
+  city = "Bekasi",
+  state = "Indonesia",
+  zip = 17435,
+  telpNum = "089898989898",
+  colMajor = "Information System";
 
 // output
 console.log("Name              : " + name);

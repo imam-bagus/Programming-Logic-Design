@@ -4,12 +4,15 @@ START
         Number milesDriven
         Number gallons
     
+    // Input
     Display "Miles Driven : "
     Input milesDriven
     Display "Gallons Gas : "
     Input gallons
 
+    // Process
     Set MPG = milesDriven / gallons
 
+    // Output
     Display "Miles-per-Gallon : ", MPG
 STOP

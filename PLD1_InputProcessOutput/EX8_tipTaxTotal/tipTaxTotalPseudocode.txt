@@ -1,0 +1,24 @@
+START
+    Declaration
+        Number total
+        Number charge
+        Number tip = 0.15
+        Number totalTip
+        Number salesTax = 0.07
+        Number totalSalesTax
+
+    // input
+    Display "Charge Food : $"
+    Input charge
+
+    // Process
+    Set totalTip = charge * tip
+    Set salesTax = charge * totalSalesTax
+    Set total = charge + totalTip + totalSalesTax
+
+    // Output
+    Display "Charge    : $", charge
+    Display "Tip       : $", totalTip
+    Display "Sales Tax : $", totalSalesTax
+    Display "Total     : $", total
+STOP

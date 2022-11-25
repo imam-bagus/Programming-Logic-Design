@@ -3,10 +3,13 @@ START
         Number profit
         Number totalSales
 
+    // Input
     Display "Enter a total sales : $"
     Input totalSales
 
+    // Process
     Set profit = totalSales * 0.23
 
+    // Output
     Display "Profit : $", profit
 STOP

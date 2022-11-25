@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-    // Declaration
+    // Input
     string name = "Imam Bagus";
     string city = "Bekasi";
     string state = "Indonesia";

@@ -10,6 +10,7 @@ START
         Number total
         Number tax = 0.06
 
+    // Input
     Display "Enter a Price Item 1: $"
     Input item1
     Display "Enter a Price Item 2: $"
@@ -21,10 +22,12 @@ START
     Display "Enter a Price Item 5: $"
     Input item5
 
+    // Process
     Set subtotal = item1 + item2 + item3 + item4 + item5
     Set salesTax = subTotal * tax
     Set total    = subTotal + salesTax
 
+    // Output
     Display "subtotal   : $", subTotal
     Display "sales tax  : $", salesTax
     Display "Total      : $", total

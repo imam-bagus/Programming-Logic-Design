@@ -1,4 +1,4 @@
-# Declaration
+# Input
 name = "Imam Bagus"
 city = "Bekasi"
 state = "Indonesia"

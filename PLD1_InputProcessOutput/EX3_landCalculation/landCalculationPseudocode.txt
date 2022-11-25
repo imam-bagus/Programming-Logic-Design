@@ -3,9 +3,12 @@ START
         number squareFeet
         number acre
     
+    // Input
     Get squareFeet
 
+    // Process
     Set acre = squareFeet / 43,560
 
+    // Output
     Display "Acres :",  acre
 STOP

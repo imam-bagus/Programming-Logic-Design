@@ -11,15 +11,18 @@ int main()
     int totalSalesTax;
     int totalSale;
 
+    // Input
     cout << "Amount Purchase : $";
     cin >> purchase;
     cout << endl;
 
+    // Process
     totalStateTax = purchase * stateTax;
     totalCountryTax = purchase * countryTax;
     totalSalesTax = totalStateTax + totalCountryTax;
     totalSale = purchase + totalSalesTax;
 
+    // Output
     cout << "Purchase          : $" << purchase << endl;
     cout << "State Sales Tax   : $" << totalStateTax << endl;
     cout << "Country Sales Tax : $" << totalCountryTax << endl;
