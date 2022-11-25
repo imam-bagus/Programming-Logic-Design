@@ -1,0 +1,15 @@
+START
+    Declaration
+        Number celsius
+        Number farenheit
+    
+    // Input
+    Display "Enter a temperature(celsius) : "
+    Input celsius
+
+    // Process
+    Set farenheit = (celsius * 9/5) + 32
+
+    // Output
+    Display "Temperature is ", farenheit, " farenheit" 
+STOP
