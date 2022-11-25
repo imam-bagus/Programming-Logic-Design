@@ -4,7 +4,7 @@ This project is an implementation of a case exercise from the book "Starting out
 
 ## Guide
 
-1. Read Problem (README.MD in every 'EX..' directories)
+1. Read Case (README.MD in every 'EX..' directories)
 2. Read Design program (Pseudocode & Flowchart)
 3. Source code (Using several programming languange such : C++, PHP, Python, JavaScript)
 4. Setup Enviroment (Visual Studio Code and read 'https://code.visualstudio.com/docs' how to setup on every language)
