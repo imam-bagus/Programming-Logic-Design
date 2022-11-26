@@ -1,0 +1,36 @@
+START
+    // Input
+    Declaration
+        Number commission = 0.02
+        Number stock = 0
+        
+        Number purchasedStock = 1000
+        Number purchasePrice = 32.87
+        Number boughtCommission
+        Number totalPurchase;
+
+        Number soldStock = 1000
+        Number sellPrice = 33.92
+        Number soldCommission
+        Number totalSell
+
+        Number total
+    
+    // Process
+    Set stock = purchasedStock
+    Set totalPurchase = purchasePrice * stock
+    Set boughtCommission = totalPurchase * commission
+
+    Set totalSell = sellPrice * stock
+    Set soldCommission = totalSell * commission
+    Set stock = purchasedStock - soldStock
+
+    Set total = totalSell - totalPurchase - boughtCommission - soldCommission
+
+    // Output
+    Display "Total purchased             : $", totalPurchase
+    Display "Broker commission(purchase) : $", boughtCommission
+    Display "Sold stock                  :  ", soldStock
+    Display "Broker commission(sold)     : $", soldCommission
+    Display "Total profit or loss        : $", total
+STOP

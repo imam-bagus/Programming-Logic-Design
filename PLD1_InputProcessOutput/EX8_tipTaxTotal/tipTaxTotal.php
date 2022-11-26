@@ -1,13 +1,13 @@
 <?php
 // Input
-$tip = 0.15;
+$tip      = 0.15;
 $salesTax = 0.07;
-$charge = readline("Charge Food : $");
+$charge   = readline("Charge Food : $");
 
 // Process
-$totalTip = $charge * $tip;
+$totalTip      = $charge * $tip;
 $totalSalesTax = $charge * $salesTax;
-$total = $charge + $totalTip + $totalSalesTax;
+$total         = $charge + $totalTip + $totalSalesTax;
 
 // Output
 echo "Charge    : $" . $charge . "\n";

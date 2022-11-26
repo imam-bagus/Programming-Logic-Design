@@ -11,9 +11,9 @@ $item5 = readline("Enter a Price Item 5 : $");
 // Process
 $subTotal = $item1 + $item2 + $item3 + $item4 + $item5;
 $salesTax = $subTotal * $tax;
-$total = $subTotal + $salesTax;
+$total    = $subTotal + $salesTax;
 
 // Output
 print("subtotal  : " . $subTotal . "\n");
 print("sales tax : " . $salesTax . "\n");
-print("Total     : " . $total    . "\n");
+print("Total     : " . $total . "\n");

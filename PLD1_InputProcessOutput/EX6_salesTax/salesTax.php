@@ -1,15 +1,15 @@
 <?php
-$stateTax = 0.04;
+$stateTax   = 0.04;
 $countryTax = 0.02;
 
 // Input
 $purchase = readline("Amount Purchase : $");
 
 // Process
-$totalStateTax = $purchase * $stateTax;
+$totalStateTax   = $purchase * $stateTax;
 $totalCountryTax = $purchase * $countryTax;
-$totalSalesTax = $totalStateTax + $totalCountryTax;
-$totalSale = $purchase + $totalSalesTax;
+$totalSalesTax   = $totalStateTax + $totalCountryTax;
+$totalSale       = $purchase + $totalSalesTax;
 
 // Output
 echo "Purchase          : $" . $purchase . "\n";
