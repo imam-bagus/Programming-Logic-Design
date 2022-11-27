@@ -1,0 +1,17 @@
+START
+    Declaration
+        Number cookies
+        Number calories = 300
+        Number totalCalories
+
+    // Input
+    Display "Enter a cookies ate : "
+    Input cookies
+
+    // Process
+    Set totalCalories = cookies * calories
+
+    // Output
+    Display "Total calories consumed :", totalCalories
+
+STOP
