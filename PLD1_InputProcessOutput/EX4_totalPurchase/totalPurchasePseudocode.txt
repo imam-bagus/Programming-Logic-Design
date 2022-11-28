@@ -23,7 +23,7 @@ START
     Input item5
 
     // Process
-    Set subtotal = item1 + item2 + item3 + item4 + item5
+    Set subTotal = item1 + item2 + item3 + item4 + item5
     Set salesTax = subTotal * tax
     Set total    = subTotal + salesTax
 

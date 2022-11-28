@@ -7,8 +7,8 @@ START
         Number purchasedStock = 1000
         Number purchasePrice = 32.87
         Number boughtCommission
-        Number totalPurchase;
-
+        Number totalPurchase
+        
         Number soldStock = 1000
         Number sellPrice = 33.92
         Number soldCommission

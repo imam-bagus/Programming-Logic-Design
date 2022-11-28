@@ -4,7 +4,7 @@ START
 		String name 	= "Imam Bagus"
 		String city 	= "Bekasi"
 		String state	= "Indonesia"
-		Number zip		= "17435"
+		String zip		= "17435"
 		String telpNum	= "089898989898"
 		String colMajor	= "Information System"
 

@@ -3,7 +3,6 @@ using namespace std;
 
 int main()
 {
-
     // Input
     string name = "Imam Bagus";
     string city = "Bekasi";

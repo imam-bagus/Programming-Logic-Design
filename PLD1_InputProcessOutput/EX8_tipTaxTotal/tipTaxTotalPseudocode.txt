@@ -13,7 +13,7 @@ START
 
     // Process
     Set totalTip = charge * tip
-    Set salesTax = charge * totalSalesTax
+    Set totalSalesTax = charge * salesTax
     Set total = charge + totalTip + totalSalesTax
 
     // Output

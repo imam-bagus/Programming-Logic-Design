@@ -1,0 +1,25 @@
+START
+    Declaration
+        Number cookies
+        Number sugar = 1.5
+        Number butter = 1
+        Number flour = 2.75
+        Number totalSugar
+        Number totalButter
+        Number totalFlour
+
+    // Input
+    Display "How Many cookies :"
+    Input cookie
+
+    // Process
+    totalSugar = sugar * cookie
+    totalButter = butter * cookie
+    totalFlour = flour * cookie
+
+    // Output
+    Display "Cookie      :", cookie
+    Display "Need sugar  :", totalSugar , " Cups"
+    Display "Need butter :", totalButter , " Cups"
+    Display "Need flour  :", totalFlour, " Cups"
+STOP
