@@ -8,8 +8,6 @@ var name = "Imam Bagus",
 
 // output
 console.log("Name              : " + name);
-console.log("City              : " + city);
-console.log("State             : " + state);
-console.log("ZIP               : " + zip);
+console.log("Address           : " + city + "," + state + "," + zip);
 console.log("telephone number  : " + telpNum);
 console.log("College Major     : " + colMajor);

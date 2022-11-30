@@ -1,20 +1,11 @@
-START
-	// input
-	Declaration
-		String name 	= "Imam Bagus"
-		String city 	= "Bekasi"
-		String state	= "Indonesia"
-		String zip		= "17435"
-		String telpNum	= "089898989898"
-		String colMajor	= "Information System"
+Declare	String name 	= "Imam Bagus"
+Declare	String city 	= "Bekasi"
+Declare	String state	= "Indonesia"
+Declare	String zip		= "17435"
+Declare	String telpNum	= "089898989898"
+Declare	String colMajor	= "Information System"
 
-	// Output
-	Display "Name			: ", name
-	Display "City 			: ", city
-	Display "State 			: ", state
-	Display "ZIP   			: ", zip
-	Display "Telphone		: ", telpNum
-	Display "College major  : ", colMajor
-STOP
-		
-		
+Output "Name : ", name
+Output "Address : ", city, state, zip
+Output "Telephone : ", telpNum
+Output "College major : ", colMajor

@@ -1,27 +1,21 @@
-START
-    Declaration
-        Number stateTax = 0.04
-        Number countryTax = 0.02
-        Number totalStateTax
-        Number totalCountryTax
-        Number purchase
-        Number totalSalesTax
-        Number totalSale
-    
-    // Input
-    Display "Amount purchase : $"
-    Input purchase
+Declare Real stateTax = 0.04
+Declare Real countryTax = 0.02
+Declare Real totalStateTax
+Declare Real totalCountryTax
+Declare Real purchase
+Declare Real totalSalesTax
+Declare Real totalSale
 
-    // Process
-    Set totalStateTax = purchase * stateTax
-    Set totalCountryTax = purchase * countryTax
-    Set totalSalesTax = totalStateTax + totalCountryTax   
-    Set totalSale = purchase + totalSalesTax
+Ouput "Amount purchase : $"
+Input purchase
 
-    // Output
-    Display "Purchase          : $", purchase
-    Display "State Sales Tax   : $", totalStateTax
-    Display "Country Sales Tax : $", totalCountryTax
-    Display "Total Sales Tax   : $", totalSalesTax
-    Display "Total Sale        : $", totalSale
-STOP
+Set totalStateTax = purchase * stateTax
+Set totalCountryTax = purchase * countryTax
+Set totalSalesTax = totalStateTax + totalCountryTax   
+Set totalSale = purchase + totalSalesTax
+
+Output "Purchase          : $", purchase
+Output "State Sales Tax   : $", totalStateTax
+Output "Country Sales Tax : $", totalCountryTax
+Output "Total Sales Tax   : $", totalSalesTax
+Output "Total Sale        : $", totalSale

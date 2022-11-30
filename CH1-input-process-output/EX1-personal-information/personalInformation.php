@@ -9,8 +9,6 @@ $colMajor = "Information System";
 
 // output
 echo "Name              : " . $name . "\n";
-echo "City              : " . $city . "\n";
-echo "State             : " . $state . "\n";
-echo "ZIP               : " . $zip . "\n";
+echo "City              : " . $city . "," . $state . "," . $zip . "\n";
 echo "Telephone Number  : " . $telpNum . "\n";
 echo "College Major     : " . $colMajor . "\n";

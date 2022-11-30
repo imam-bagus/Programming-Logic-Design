@@ -1,35 +1,28 @@
-START
-    Declaration
-        Number item1
-        Number item2
-        Number item3
-        Number item4
-        Number item5
-        Number subTotal
-        Number salesTax
-        Number total
-        Number tax = 0.06
+Declare Integer item1
+Declare Integer item2
+Declare Integer item3
+Declare Integer item4
+Declare Integer item5
+Declare Integer subTotal
+Declare Integer salesTax
+Declare Integer total
+Declare Real tax = 0.06
 
-    // Input
-    Display "Enter a Price Item 1: $"
-    Input item1
-    Display "Enter a Price Item 2: $"
-    Input item2
-    Display "Enter a Price Item 3: $"
-    Input item3
-    Display "Enter a Price Item 4: $"
-    Input item4
-    Display "Enter a Price Item 5: $"
-    Input item5
+Output "Enter a Price Item 1: $"
+Input item1
+Output "Enter a Price Item 2: $"
+Input item2
+Output "Enter a Price Item 3: $"
+Input item3
+Output "Enter a Price Item 4: $"
+Input item4
+Output "Enter a Price Item 5: $"
+Input item5
 
-    // Process
-    Set subTotal = item1 + item2 + item3 + item4 + item5
-    Set salesTax = subTotal * tax
-    Set total    = subTotal + salesTax
+Set subTotal = item1 + item2 + item3 + item4 + item5
+Set salesTax = subTotal * tax
+Set total    = subTotal + salesTax
 
-    // Output
-    Display "subtotal   : $", subTotal
-    Display "sales tax  : $", salesTax
-    Display "Total      : $", total
-
-STOP
+Output "subtotal   : $", subTotal
+Output "sales tax  : $", salesTax
+Output "Total      : $", total

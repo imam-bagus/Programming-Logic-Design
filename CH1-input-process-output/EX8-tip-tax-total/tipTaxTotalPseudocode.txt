@@ -1,24 +1,18 @@
-START
-    Declaration
-        Number total
-        Number charge
-        Number tip = 0.15
-        Number totalTip
-        Number salesTax = 0.07
-        Number totalSalesTax
+Declare Integer total
+Declare Integer charge
+Declare Real tip = 0.15
+Declare Real totalTip
+Declare Real salesTax = 0.07
+Declare Real totalSalesTax
 
-    // input
-    Display "Charge Food : $"
-    Input charge
+Output "Charge Food : $"
+Input charge
 
-    // Process
-    Set totalTip = charge * tip
-    Set totalSalesTax = charge * salesTax
-    Set total = charge + totalTip + totalSalesTax
+Set totalTip = charge * tip
+Set totalSalesTax = charge * salesTax
+Set total = charge + totalTip + totalSalesTax
 
-    // Output
-    Display "Charge    : $", charge
-    Display "Tip       : $", totalTip
-    Display "Sales Tax : $", totalSalesTax
-    Display "Total     : $", total
-STOP
+Output "Charge    : $", charge
+Output "Tip       : $", totalTip
+Output "Sales Tax : $", totalSalesTax
+Output "Total     : $", total

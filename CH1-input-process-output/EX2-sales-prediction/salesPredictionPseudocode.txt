@@ -1,15 +1,9 @@
-START
-    Declaration
-        Number profit
-        Number totalSales
+Declare Real profit
+Declare Real totalSales
 
-    // Input
-    Display "Enter a total sales : $"
-    Input totalSales
+Output "Enter a total sales : $"
+Input totalSales
 
-    // Process
-    Set profit = totalSales * 0.23
+Set profit = totalSales * 0.23
 
-    // Output
-    Display "Profit : $", profit
-STOP
+Output "Profit : $", profit

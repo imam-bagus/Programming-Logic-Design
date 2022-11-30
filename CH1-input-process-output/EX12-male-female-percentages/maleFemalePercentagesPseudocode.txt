@@ -1,23 +1,17 @@
-START
-    Declaration
-        Number male
-        Number female
-        Number totalStudent
-        Number percentageMale
-        Number percentageFemale
+Declare Integer male
+Declare Integer female
+Declare Integer totalStudent
+Declare Integer percentageMale
+Declare Integer percentageFemale
 
-    // Input
-    Display "Enter number of males   : "
-    Input male
-    Display "Enter number of females : "
-    Input female
+Output "Enter number of males   : "
+Input male
+Output "Enter number of females : "
+Input female
 
-    // Process
-    Set totalStudent = male + female
-    Set percentageMale = male / totalStudent
-    Set percentageFemales = female / totalStudent
+Set totalStudent = male + female
+Set percentageMale = male / totalStudent
+Set percentageFemales = female / totalStudent
 
-    // Output
-    Display "Percentage Males student :", percentagesMale , "%"
-    Display "Percentage Females student :", percentageFemale, "%"
-STOP
+Output "Percentage Males student :", percentagesMale , "%"
+Output "Percentage Females student :", percentageFemale, "%"

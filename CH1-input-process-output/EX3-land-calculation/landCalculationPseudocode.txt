@@ -1,14 +1,9 @@
-START
-    Declaration
-        number squareFeet
-        number acre
+    Declare Real squareFeet
+    Declare Real acre
     
-    // Input
-    Get squareFeet
+    Output "Enter a Square Feet :"
+    Input squareFeet
 
-    // Process
     Set acre = squareFeet / 43,560
 
-    // Output
-    Display "Acres :",  acre
-STOP
+    Output "Acres :",  acre

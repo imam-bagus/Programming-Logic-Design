@@ -1,25 +1,19 @@
-START
-    Declaration
-        Number cookies
-        Number sugar = 1.5
-        Number butter = 1
-        Number flour = 2.75
-        Number totalSugar
-        Number totalButter
-        Number totalFlour
+Declare Integer cookies
+Declare Real sugar = 1.5
+Declare Real butter = 1
+Declare Real flour = 2.75
+Declare Real totalSugar
+Declare Real totalButter
+Declare Real totalFlour
 
-    // Input
-    Display "How Many cookies :"
-    Input cookie
+Output "How Many cookies :"
+Input cookie
 
-    // Process
-    totalSugar = sugar * cookie
-    totalButter = butter * cookie
-    totalFlour = flour * cookie
+Set totalSugar = sugar * cookie
+Set totalButter = butter * cookie
+Set totalFlour = flour * cookie
 
-    // Output
-    Display "Cookie      :", cookie
-    Display "Need sugar  :", totalSugar , " Cups"
-    Display "Need butter :", totalButter , " Cups"
-    Display "Need flour  :", totalFlour, " Cups"
-STOP
+Output "Cookie      :", cookie
+Output "Need sugar  :", totalSugar , " Cups"
+Output "Need butter :", totalButter , " Cups"
+Output "Need flour  :", totalFlour, " Cups"
