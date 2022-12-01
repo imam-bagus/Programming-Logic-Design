@@ -1,0 +1,16 @@
+Module main()
+    Declare Real kilometer
+
+    Output "Enter a Distance in kilometers :"
+    Input kilometer
+
+    Call converts(kilometer)
+End Module
+
+Module converts(Real kilometer)
+    Declare Real miles
+    
+    Set miles = kilometer * 0.6214
+
+    Output "Distance in miles :", miles
+End Module

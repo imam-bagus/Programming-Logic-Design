@@ -1,21 +1,25 @@
 #include <iostream>
 using namespace std;
 
-void inputReplacementCost(double &replacementCost){
+void inputReplacementCost(double &replacementCost)
+{
     cout << "Enter a replacement cost : $";
     cin >> replacementCost;
 }
 
-void calculateInsurance(double &totalInsurance, double &replacementCost, double &minimumInsurance){
+void calculateInsurance(double &totalInsurance, double &replacementCost, double &minimumInsurance)
+{
     totalInsurance = (replacementCost * minimumInsurance) + replacementCost;
 }
 
-void printTotalInsurance(double &totalInsurance){
+void printTotalInsurance(double &totalInsurance)
+{
 
     cout << "Minimum amount insurance : $" << totalInsurance;
 }
 
-int main(){
+int main()
+{
 
     double replacementCost;
     double minimumInsurance = 0.8;

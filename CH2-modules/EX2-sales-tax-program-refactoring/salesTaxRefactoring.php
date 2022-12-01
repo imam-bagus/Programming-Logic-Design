@@ -37,11 +37,11 @@ function printAll(&$purchase, &$totalStateTax, &$totalCountryTax, &$totalSalesTa
 
 function main()
 {
- $totalStateTax;
- $totalCountryTax;
- $purchase;
- $totalSalesTax;
- $totalSale;
+ $totalStateTax   = 0;
+ $totalCountryTax = 0;
+ $purchase        = 0;
+ $totalSalesTax   = 0;
+ $totalSale       = 0;
 
  getPurchase($purchase);
  calculateTotalStateTax($purchase, $totalStateTax);
