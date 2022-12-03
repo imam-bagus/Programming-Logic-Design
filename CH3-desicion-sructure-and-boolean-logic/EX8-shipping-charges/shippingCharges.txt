@@ -1,0 +1,21 @@
+Declare Real weightPackage
+Declare Real shippingCharges
+
+Output "Enter a weight of a package :"
+Input weightPackage
+
+If weightPackage <= 2 Then
+    Set shippingCharges = 1.10
+Else
+    If weightPackage > 2 AND <= 6 Then
+        Set shippingCharges = 2.20
+    Else
+        If weightPackage > 6 AND <= 10 Then
+            Set shippingCharges = 3.70
+        Else
+            Set shippingCharges = 3.80    
+        EndIf
+    EndIf
+EndIf
+
+Output "Shipping charges : $", shippingCharges

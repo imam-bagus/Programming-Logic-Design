@@ -1,0 +1,27 @@
+Declare int bookPurchased
+Declare int point
+
+Output "Number of books purchased :"
+Input bookPurchased
+
+If bookPurchased == 0 Then
+    Set point = 0
+Else
+    If bookPurchased == 1 Then
+        Set point = 5   
+    Else
+        If bookPurchased == 2 Then
+            Set point = 15   
+        Else
+            If bookPurchased == 3 Then
+                Set point = 30
+            Else
+                If bookPurchased >= 4 Then
+                    Set point = 60    
+                EndIf
+            EndIf
+        EndIf
+    EndIf
+EndIf
+
+Output "Points awarded :", point

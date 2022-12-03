@@ -1,0 +1,33 @@
+Declare Integer price = 99
+Declare Integer quantity
+Declare Real discount = 0
+Declare Real total
+Declare Real totalAfterDiscount
+
+
+Output "Enter number of packages purchased :"
+Input quantity
+
+Set total = price * quantity
+
+If quantity >= 10 AND quantity <= 19 Then
+    Set discount = total * 0.2
+Else
+    If quantity >= 20 AND quantity <= 49 Then
+        Set discount = total * 0.3
+    Else
+        If quantity >= 50 AND quantity <= 99 Then
+            Set discount = total * 0.4
+        else
+            If quantity >= 100 Then
+                Set discount = total * 0.5
+            EndIf
+        EndIf
+    EndIf
+EndIf
+
+Set totalAfterDiscount = total - discount
+
+Output "Total                :", total
+Output "Discount             :", discount
+Output "Total after discount :", totalAfterDiscount

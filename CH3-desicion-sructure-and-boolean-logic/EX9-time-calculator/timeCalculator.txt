@@ -1,0 +1,23 @@
+Declare Integer seconds
+Declare Integer result
+
+Output "Enter a second :"
+Input second
+
+If seconds < 60 Then
+    Set result = seconds
+    Output result, " Seconds"
+Else
+    If seconds >= 60 AND < 3600 Then
+        Set result = seconds / 60
+        Output result, " Minutes"
+    Else
+        If seconds >= 3600 AND < 86400 Then
+            Set result = seconds / 3600
+             Output result, " Hours"
+        Else
+            Set result = seconds / 86400
+             Output result, " Days"
+        EndIf
+    EndIf
+EndIf
