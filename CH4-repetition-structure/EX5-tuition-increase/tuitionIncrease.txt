@@ -1,0 +1,15 @@
+Declare Real tuition = 6000
+Declare Integer year
+Declare Real totalFiveYears
+Declare Integer temp
+
+Set year = 1
+
+For year = 1 To 5
+  Set temp = tuition * 0.02
+  Set totalFiveYears = totalFiveYears + tuition + temp
+
+  Set year = year + 1
+EndFor
+
+Output "total tuition for next 5 years : $", totalFiveYears

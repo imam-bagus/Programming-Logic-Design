@@ -1,0 +1,13 @@
+Declare Integer numbers
+Declare Integer sum
+
+while numbers >= 0
+  Output "Enter a number : "
+  Input numbers
+
+  If numbers > 0 Then
+    Set sum = sum + numbers
+  End If
+End While
+
+Output sum

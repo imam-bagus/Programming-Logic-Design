@@ -1,0 +1,16 @@
+Declare Integer collectBugs
+Declare Integer accumulator
+Declare Integer counter
+
+
+Set counter = 1
+While counter <= 7
+  Output "Enter number bugs collected today : ", counter
+  Input collectBugs
+
+  Set accumulator = accumulator + collectBugs
+
+  Set counter = counter + 1
+End While
+
+Output "Total Bugs collected during seven days : ", accumulator
