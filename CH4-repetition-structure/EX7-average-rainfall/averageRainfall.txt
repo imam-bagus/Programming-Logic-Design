@@ -1,0 +1,37 @@
+Declare Integer years
+Declare Integer year
+Declare Integer month
+Declare Integer months
+Declare Integer totalMonths
+Declare Real inchesRainfall
+Declare Real totalInchesRainfall
+Declare Real averageInchesRainfall
+
+Output "Enter a Number of years :"
+Input years
+
+Set months = 12
+
+Set year = 1
+For year to years
+
+  Set month = 1
+  For month to months
+  
+    Output "Enter a the inches of rainfall month ", month, "/", year
+    Input inchesRainfall
+
+    Set totalInchesRainfall =  totalInchesRainfall + inchesRainfall
+
+    Set month = month + 1
+  EndFor
+
+Set years = years + 1  
+EndFor
+
+Set averageInchesRainfall = totalInchesRainfall / years
+Set totalMonths = months * years
+
+Output "number of months           :", totalMonths
+Output "Total inches of rainfall   :", totalInchesRainfall 
+Output "average rainfall per month :", averageInchesRainfall 

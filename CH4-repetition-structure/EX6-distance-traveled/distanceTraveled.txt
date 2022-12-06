@@ -1,0 +1,23 @@
+Declare Integer speed
+Declare Integer hoursTraveled
+Declare Integer distance
+Declare Integer time
+
+Output "What is the speed of the vehicle in mph? "
+Input speed
+
+Output "How many hours has it traveled? "
+Input hoursTraveled
+
+Output "Hour     Distance Travelled"
+Output "---------------------------"
+
+Set time = 1
+
+for time To hoursTraveled
+  Set distance = speed * time
+
+  Output " " ,time ,"              ", distance
+
+  Set time = time + 1
+EndFor

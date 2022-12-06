@@ -1,0 +1,9 @@
+Declare Real celcius
+Declare Real farenheit
+
+Set celcius = 0
+For celcius to 20
+  Set farenheit = (celcius * 9/5) + 32
+  Output "|Celcius|Farenheit|"
+  Output "|", celcius, "|", Farenheit. "|"
+EndFor
