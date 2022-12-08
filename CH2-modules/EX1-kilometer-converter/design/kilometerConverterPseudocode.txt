@@ -7,7 +7,7 @@ Module main()
     Call converts(kilometer)
 End Module
 
-Module converts(Real kilometer)
+Module converts(Real Ref kilometer)
     Declare Real miles
     
     Set miles = kilometer * 0.6214

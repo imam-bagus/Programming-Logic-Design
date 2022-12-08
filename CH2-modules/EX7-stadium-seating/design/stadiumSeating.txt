@@ -1,0 +1,32 @@
+Module main()
+  Declare Integer ticketClassA
+  Declare Integer ticketClassB
+  Declare Integer ticketClassC
+  Declare Real amountIncome
+
+  Call getTicketSold(ticketClassA,ticketClassB,ticketClassC)
+  Call processSales(ticketClassA,ticketClassB,ticketClassC, amountIncome)
+  Call printAmountIncome(amountIncome)
+End Module
+
+
+Module getTicketSold(Integer Ref ticketClassA, Integer Ref ticketClassB, Integer Ref ticketClassC)
+  Output "How many tickets class A were sold :"
+  Input ticketClassA
+  Output "How many tickets class B were sold :"
+  Input ticketClassB
+  Output "How many tickets class C were sold :"
+  Input ticketClassC
+End Module
+
+
+Module processSales(Integer Ref ticketClassA, Integer Ref ticketClassB, Integer Ref ticketClassC, Real Ref amountIncome)
+  Set amountIncome = ticketClassA * 15
+  Set amountIncome = amountIncome + ticketClassB * 12
+  Set amountIncome = amountIncome + ticketClassC * 9
+End Module
+
+
+Module printAmountIncome(Real Ref amountIncome)
+   Output "amount income generated from ticket sales : $", amountIncome
+End Module

@@ -18,12 +18,12 @@ Module getPurchase(Real Ref purchase)
     Input purchase
 End Module
 
-Module calculateTotalStateTax(Real purchase, Real Ref totalStateTax)
+Module calculateTotalStateTax(Real Ref purchase, Real Ref totalStateTax)
     Declare Real stateTax = 0.04
     Set totalStateTax = purchase * stateTax
 End Module
 
-Module calculateTotalCountryTax(Real purchase, Real Ref totalCountryTax)
+Module calculateTotalCountryTax(Real Ref purchase, Real Ref totalCountryTax)
     Declare Real countryTax = 0.02
     Set totalCountryTax = purchase * countryTax
 End Module
