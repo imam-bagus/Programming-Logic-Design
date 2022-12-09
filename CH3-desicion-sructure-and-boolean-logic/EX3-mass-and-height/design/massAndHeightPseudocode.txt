@@ -1,15 +1,15 @@
 Declare Real mass
 Declare Real weight
 
-Output "Enter a object's mass"
+Output "Enter a object's mass :"
 Input mass
 
 Set weight = mass * 9.8
 
-If mass > 1000 Then
+If weight > 1000 Then
     Output "It is too Heavy"
 End If
 
-If mass < 10 Then
+If weight < 10 Then
     Output "It is too light"
 End If
