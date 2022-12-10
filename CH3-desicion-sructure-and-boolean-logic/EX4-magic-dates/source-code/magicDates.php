@@ -11,8 +11,8 @@ $year  = readline("Enter a year  :");
 
 $result = $month * $day;
 
-if($result == $year){
-  echo "the date is magic";
-}else{
-  echo "the date is not magic";
+if ($result == $year) {
+ echo "the date is magic";
+} else {
+ echo "the date is not magic";
 }
