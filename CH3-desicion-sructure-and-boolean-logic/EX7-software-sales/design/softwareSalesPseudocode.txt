@@ -1,6 +1,7 @@
-Declare Integer price = 99
+Constant Integer PRICE = 99
+
 Declare Integer quantity
-Declare Real discount = 0
+Declare Real discount
 Declare Real total
 Declare Real totalAfterDiscount
 
@@ -8,7 +9,7 @@ Declare Real totalAfterDiscount
 Output "Enter number of packages purchased :"
 Input quantity
 
-Set total = price * quantity
+Set total = PRICE * quantity
 
 If quantity >= 10 AND quantity <= 19 Then
     Set discount = total * 0.2
@@ -21,6 +22,8 @@ Else
         else
             If quantity >= 100 Then
                 Set discount = total * 0.5
+            else
+                Set discount = 0
             EndIf
         EndIf
     EndIf
@@ -28,6 +31,6 @@ EndIf
 
 Set totalAfterDiscount = total - discount
 
-Output "Total                :", total
-Output "Discount             :", discount
-Output "Total after discount :", totalAfterDiscount
+Output "Total : $", total
+Output "Discount : $", discount
+Output "Total after discount : $", totalAfterDiscount
