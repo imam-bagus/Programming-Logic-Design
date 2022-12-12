@@ -4,35 +4,39 @@ using namespace std;
 int main()
 {
     int numbers;
-    int largest = 0;
-    int smallest = 0;
+    int largest;
+    int smallest;
     int flag = 1;
 
-    do
+    cout << "Enter a number :";
+    cin >> numbers;
+
+    while (numbers != -99)
     {
         if (flag == 1)
+        {
+            largest = numbers;
+            smallest = numbers;
+        }
+
+        if (numbers > largest)
         {
             largest = numbers;
         }
         else
         {
-            if (flag == 2)
+            if (numbers < smallest)
             {
                 smallest = numbers;
             }
-            else
-            {
-                if (numbers > largest)
-                {
-                    largest = numbers;
-                }
-
-                if (numbers < smallest)
-                {
-                    smallest = numbers;
-                }
-            }
         }
+
+        cout << "Enter a number :";
+        cin >> numbers;
+
         flag = flag + 1;
-    } while (numbers != -99);
+    }
+
+    cout << "Largest number :" << largest << endl;
+    cout << "Smallest number :" << smallest << endl;
 }
