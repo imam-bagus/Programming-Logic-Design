@@ -6,4 +6,5 @@ For celcius to 20
   Set farenheit = (celcius * 9/5) + 32
   Output "|Celcius|Farenheit|"
   Output "|", celcius, "|", Farenheit. "|"
+  Set Celcius = Celcius + 1
 EndFor

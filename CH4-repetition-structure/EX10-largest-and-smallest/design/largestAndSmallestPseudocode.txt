@@ -1,0 +1,26 @@
+Declare int numbers
+Declare int largest = 0 
+Declare int smallest = 0
+Declare int flag = 1
+
+do
+    Output "Enter a number : "
+    Input numbers
+
+    If flag == 1 Then
+        largest = numbers
+    Else
+        If flag == 2 Then
+            smallest = numbers
+        Else
+             If numbers > largest Then
+                largest = numbers
+            EndIf
+
+            If numbers < smallest Then
+                smallest = numbers
+            EndIf
+        EndIf
+    EndIf
+    flag = flag + 1
+while numbers != -99
