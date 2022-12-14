@@ -1,0 +1,20 @@
+Module Main()
+    Constant Integer EQUALS = 12
+    Declare Integer feet
+    Declare Integer inches
+
+    Output "Enter a feet :"
+    Input feet
+
+    Set inches = feetToInches(feet, EQUALS)
+
+    Output "Inches : ", inches
+End Module
+
+Function Integer feetToInches(Integer feet, Integer EQUALS)
+    Declare Integer result
+
+    Set result = EQUALS * feet
+
+    Return result
+End Function
