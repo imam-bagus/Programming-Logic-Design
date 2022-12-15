@@ -1,0 +1,22 @@
+Module main()
+    Declare Real KE
+    Declare Real m
+    Declare Real v
+
+    Output "Enter mass :"
+    Input m
+    Output "Enter velocity :"
+    Input v
+
+    Set KE = kineticEnergy(m, v)
+
+    Output "Object's kinetic energy : ", KE
+End Module
+
+Function Real kineticEnergy(Real m, Real v)
+    Declare Real result
+
+    Set result = (0.5) * m * v ^ 2
+
+    Return result
+End Function
