@@ -1,0 +1,18 @@
+Declare Integer number1
+Declare Integer number2
+Declare Integer answer
+Declare Integer userAnswer
+
+Set number1 = random(1,1000)
+Set number2 = random(1,1000)
+
+Output number1, " + ", number2," = "
+Input userAnswer
+
+Set answer = number1 + number2
+
+If answer == userAnswer Then
+    Output "Congratulations your answer is correct !!"
+Else
+    Output "your answer is incorrect !! , correct answer is :", answer
+EndIf
