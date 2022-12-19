@@ -1,0 +1,16 @@
+Declare Integer days = 6
+Declare Real sales[days]
+Declare Real totalSales
+Declare Integer day
+
+Set day = 0
+For day To days Then
+    Output "Enter a sales day ", day + 1, " : $"
+    Input sales[day]
+
+    Set totalSales = totalSales + sales[day]
+
+    Set day = day + 1
+End For
+
+Output "Total Sales for the week : $", totalSales

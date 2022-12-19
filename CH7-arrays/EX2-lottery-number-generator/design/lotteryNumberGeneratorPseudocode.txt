@@ -1,0 +1,13 @@
+Constant Integer SIZE = 6
+Declare Integer lotteryDigit[SIZE]
+Declare Integer index
+
+Set index = 0
+For index To SIZE Then
+    Set lotteryDigit[index] = random(0,9)
+End For
+
+Set index = 0
+For index To SIZE Then
+    Output lotteryDigit[index]
+End For
