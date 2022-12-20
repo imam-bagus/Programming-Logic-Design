@@ -13,21 +13,43 @@ For example, if a train travels 40 miles per hour for three hours, the distance 
 ## Pseudocode
 
 ```
+Declare Integer speed
+Declare Integer hoursTraveled
+Declare Integer distance
+Declare Integer time
 
+Output "What is the speed of the vehicle in mph? "
+Input speed
+
+Output "How many hours has it traveled? "
+Input hoursTraveled
+
+Output "Hour     Distance Travelled"
+Output "---------------------------"
+
+Set time = 1
+
+for time To hoursTraveled
+  Set distance = speed * time
+
+  Output " " ,time ,"              ", distance
+
+  Set time = time + 1
+EndFor
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](distanceTraveled.cpp)
+- [Java](distanceTraveled.java)
+- [Python](distanceTraveled.py)
+- [PHP](distanceTraveled.php)
+- [JavaScript](distanceTraveled.js)

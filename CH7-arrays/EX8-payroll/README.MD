@@ -24,6 +24,35 @@ After the data has been entered for all the employees, the program should displa
 ## Pseudocode
 
 ```
+Constant Integer SIZE = 7
+Declare Integer empID[SIZE] = 56588, 45201, 78951, 87775, 84512, 13028, 75804
+Declare Integer hours[SIZE]
+Declare Real payRate[SIZE]
+Declare Real wages[SIZE]
+Declare Integer index
+
+Set index = 0
+For index To (SIZE - 1) Then
+    Output "Employee ID ", empID[index]
+    Output "hours worked : "
+    Input hours[index]
+    Output "Pay rate :"
+    Input payRate[index]
+    Output "---------------"
+
+    Set wages[index] = payRate[index] * hours[index]
+
+    Set index = index + 1
+End For
+
+Output "================"
+
+Set index = 0
+For index To (SIZE - 1) Then
+    Output "Employee ID : ", empID[index]
+    Output "Gross Wages : ", wages[index]
+    Output "---------------"
+End For
 
 ```
 
@@ -31,14 +60,14 @@ After the data has been entered for all the employees, the program should displa
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="design/.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](payroll.cpp)
+- [Java](payroll.java)
+- [Python](payroll.py)
+- [PHP](payroll.php)
+- [JavaScript](payroll.js)

@@ -13,21 +13,42 @@ Design a function that accepts a rectangle’s width and length as arguments and
 ## Pseudocode
 
 ```
+Module main()
+    Declare Real width
+    Declare Real length
+    Declare Real area
 
+    Output "Enter a width : "
+    Input width
+    Output "Enter a length : "
+    Input length
+
+    Set area = calculateArea(width, length)
+
+    Output "Rectangle's area : ", area
+End Module
+
+Function Real calculateArea(Real width, Real length)
+    Declare Real result
+
+    Set result = width * length
+
+    Return result
+End Function
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](rectangleArea.cpp)
+- [Java](rectangleArea.java)
+- [Python](rectangleArea.py)
+- [PHP](rectangleArea.php)
+- [JavaScript](rectangleArea.js)

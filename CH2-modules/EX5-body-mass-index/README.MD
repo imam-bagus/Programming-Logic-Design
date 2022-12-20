@@ -11,21 +11,51 @@ BMI = Weight(kg) × 703 / Height(meter)
 ## Pseudocode
 
 ```
+Module main()
+  Declare Real weight
+  Declare Real height
+  Declare Real BMI
 
+  Call getWeightHeight(weight,height)
+  Call processBMI(weight, height, BMI)
+  Call printBMI(BMI)
+End Module
+
+Module getWeightHeight(Real Ref weight, Real Ref height)
+  Output "Enter a weight (lb) :"
+  Input weight
+
+  Output "Enter a height (Inches) :"
+  Input height
+End Module
+
+Module processBMI(Real Ref weight, Real Ref height, Real Ref BMI)
+  Set BMI = (weight * 703) / (height * height)
+End Module
+
+Module printBMI(Real Ref BMI)
+  Output "BMI : ", BMI
+End Module
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="bodyMassIndexFlowchart.png"  >
+
+<hr>
+
+## Hierarcy Chart
+
+<img src="dbodyMassIndexHierarchychart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](bodyMassIndex.cpp)
+- [Java](bodyMassIndex.java)
+- [Python](bodyMassIndex.py)
+- [PHP](bodyMassIndex.php)
+- [JavaScript](bodyMassIndex.js)

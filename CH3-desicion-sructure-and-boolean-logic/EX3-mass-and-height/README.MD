@@ -13,21 +13,35 @@ Design a program that asks the user to enter an object’s mass, and then calcul
 ## Pseudocode
 
 ```
+Declare Real mass
+Declare Real weight
 
+Output "Enter a object's mass :"
+Input mass
+
+Set weight = mass * 9.8
+
+If weight > 1000 Then
+    Output "It is too Heavy"
+End If
+
+If weight < 10 Then
+    Output "It is too light"
+End If
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="massAndHeightFlowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](massAndHeight.cpp)
+- [Java](massAndHeight.java)
+- [Python](massAndHeight.py)
+- [PHP](massAndHeight.php)
+- [JavaScript](massAndHeight.js)

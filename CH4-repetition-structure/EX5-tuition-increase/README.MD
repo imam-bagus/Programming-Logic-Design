@@ -9,21 +9,35 @@ At one college, the tuition for a full-time student is $6,000 per semester. It h
 ## Pseudocode
 
 ```
+Declare Real tuition = 6000
+Declare Integer year
+Declare Real totalFiveYears
+Declare Integer temp
 
+Set year = 1
+
+For year = 1 To 5
+  Set temp = tuition * 0.02
+  Set totalFiveYears = totalFiveYears + tuition + temp
+
+  Set year = year + 1
+EndFor
+
+Output "total tuition for next 5 years : $", totalFiveYears
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](tuitionIncrease.cpp)
+- [Java](tuitionIncrease.java)
+- [Python](tuitionIncrease.py)
+- [PHP](tuitionIncrease.php)
+- [JavaScript](tuitionIncrease.js)

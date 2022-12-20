@@ -15,6 +15,29 @@ Design a program that asks the user to enter a number of seconds, and works as f
 ## Pseudocode
 
 ```
+Declare Integer second
+Declare Integer result
+
+Output "Enter a second :"
+Input second
+
+If second < 60 Then
+    Set result = second
+    Output result, " second"
+Else
+    If second >= 60 AND second < 3600 Then
+        Set result = second / 60
+        Output result, " Minute"
+    Else
+        If second >= 3600 AND second < 86400 Then
+            Set result = second / 3600
+             Output result, " Hour"
+        Else
+            Set result = second / 86400
+             Output result, " Day"
+        EndIf
+    EndIf
+EndIf
 
 ```
 
@@ -22,14 +45,14 @@ Design a program that asks the user to enter a number of seconds, and works as f
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="timeCalculatorFlowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](timeCalculator.cpp)
+- [Java](timeCalculator.java)
+- [Python](timeCalculator.py)
+- [PHP](timeCalculator.php)
+- [JavaScript](timeCalculator.js)

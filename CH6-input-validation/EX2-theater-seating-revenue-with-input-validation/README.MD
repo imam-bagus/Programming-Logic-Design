@@ -15,21 +15,65 @@ The program should validate the numbers that are entered for each section.
 ## Pseudocode
 
 ```
+Constant Real priceSectionA = 20
+Constant Real priceSectionB = 15
+Constant Real priceSectionC = 10
+Constant Integer maxSeatSectionA = 300
+Constant Integer maxSeatSectionB = 500
+Constant Integer maxSeatSectionC = 200
+Declare Integer ticketsSoldA
+Declare Integer ticketsSoldB
+Declare Integer ticketsSoldC
+Declare Real income
 
+Output "Enter a number of tickets sold in section A : "
+Input ticketsSoldA
+
+While ticketsSoldA < 0 AND ticketsSoldA > maxSeatSectionA Then
+    Output "ERROR : Tickets just available ", maxSeatSectionA, " seat and cannot input minus value"
+    Output "Enter a number of tickets sold in section A : "
+    Input ticketsSoldA
+End While
+
+
+Output "Enter a number of tickets sold in section B : "
+Input ticketsSoldB
+
+
+While ticketsSoldB < 0 AND ticketsSoldB > maxSeatSectionB Then
+    Output "ERROR : Tickets just available ", maxSeatSectionB, " seat and cannot input minus value"
+    Output "Enter a number of tickets sold in section B : "
+    Input ticketsSoldB
+End While
+
+
+Output "Enter a number of tickets sold in section C : "
+Input ticketsSoldC
+
+While ticketsSoldC < 0 AND ticketsSoldC > maxSeatSectionC Then
+    Output "ERROR : Tickets just available ", maxSeatSectionC, " seat and cannot input minus value"
+    Output "Enter a number of tickets sold in section C : "
+    Input ticketsSoldC
+End While
+
+
+Set income = priceSectionA * ticketsSoldA + priceSectionB * ticketsSoldB + priceSectionC + ticketsSoldC
+
+Output "The amount of income generated from ticket sales : $", income
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="design/.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](theaterSeatingRevenueWithInputValidation.cpp)
+- [Java](theaterSeatingRevenueWithInputValidation.java)
+- [Python](theaterSeatingRevenueWithInputValidation.py)
+- [PHP](theaterSeatingRevenueWithInputValidation.php)
+- [JavaScript](theaterSeatingRevenueWithInputValidation.js)

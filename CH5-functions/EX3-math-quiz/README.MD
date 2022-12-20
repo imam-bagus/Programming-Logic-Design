@@ -13,21 +13,38 @@ The program should allow the student to enter the answer. If the answer is corre
 ## Pseudocode
 
 ```
+Declare Integer number1
+Declare Integer number2
+Declare Integer answer
+Declare Integer userAnswer
 
+Set number1 = random(1,1000)
+Set number2 = random(1,1000)
+
+Output number1, " + ", number2," = "
+Input userAnswer
+
+Set answer = number1 + number2
+
+If answer == userAnswer Then
+    Output "Congratulations your answer is correct !!"
+Else
+    Output "your answer is incorrect !! , correct answer is :", answer
+EndIf
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](mathQuiz.cpp)
+- [Java](mathQuiz.java)
+- [Python](mathQuiz.py)
+- [PHP](mathQuiz.php)
+- [JavaScript](mathQuiz.js)

@@ -13,21 +13,60 @@ Use the function in a program that prompts the user to enter a number and then d
 ## Pseudocode
 
 ```
+Module main()
+    Declare Integer number
+    Declare Boolean isPrimeNumber
 
+    Output "Enter a number : "
+    Input number
+
+    Set isPrimeNumber = isPrime(number)
+
+    If isPrimeNumber Then
+        Output number, "is a Prime number"
+    Else
+        Output number, "is not a Prime number"
+    EndIf
+End Module
+
+Function Bool isPrime(Integer number)
+    Declare Integer counter
+    Declare Integer flag
+    Declare Boolean result
+
+    Set flag = 0
+    Set counter = 1
+    For counter To number Then
+
+        If number % counter == 0 Then
+            Set flag = flag + 1
+        EndIf
+
+        If flag == 2 Then
+            Set result = True
+        Else
+            Set result = False
+        EndIf
+
+        Set counter = counter + 1
+    EndFor
+
+    Return result
+End Function
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](primeNumbers.cpp)
+- [Java](primeNumbers.java)
+- [Python](primeNumbers.py)
+- [PHP](primeNumbers.php)
+- [JavaScript](primeNumbers.js)

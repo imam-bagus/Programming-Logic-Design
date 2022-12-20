@@ -17,21 +17,45 @@ Design a program that asks the user to enter the number of books that he or she 
 ## Pseudocode
 
 ```
+Declare int bookPurchased
+Declare int point
 
+Output "Number of books purchased :"
+Input bookPurchased
+
+If bookPurchased < 1 Then
+    Set point = 0
+Else
+    If bookPurchased == 1 Then
+        Set point = 5
+    Else
+        If bookPurchased == 2 Then
+            Set point = 15
+        Else
+            If bookPurchased == 3 Then
+                Set point = 30
+            Else
+                    Set point = 60
+            EndIf
+        EndIf
+    EndIf
+EndIf
+
+Output "Points awarded :", point
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="bookClubPointsFlowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](sbookPointClub.cpp)
+- [Java](sbookPointClub.java)
+- [Python](sbookPointClub.py)
+- [PHP](sbookPointClub.php)
+- [JavaScript](sbookPointClub.js)

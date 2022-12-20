@@ -9,6 +9,37 @@ Design a program with a loop that lets the user enter a series of numbers. The u
 ## Pseudocode
 
 ```
+Declare int numbers
+Declare int largest
+Declare int smallest
+Declare int flag = 1
+
+Output "Enter a number : "
+Input numbers
+
+While numbers != -99
+
+    If flag == 1 Then
+       Set largest = numbers
+       Set smallest = numbers
+    EndIf
+
+    If numbers > largest Then
+        largest = numbers
+    Else
+        If numbers < smallest Then
+        Set smallest = numbers
+        EndIf
+    EndIf
+
+    Output "Enter a number : "
+    Input numbers
+
+    Set flag = flag + 1
+EndWhile
+
+Output "Largest number :", largest
+Output "Smallest number :", smallest
 
 ```
 
@@ -16,14 +47,14 @@ Design a program with a loop that lets the user enter a series of numbers. The u
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](largestAndSmallest.cpp)
+- [Java](largestAndSmallest.java)
+- [Python](largestAndSmallest.py)
+- [PHP](largestAndSmallest.php)
+- [JavaScript](largestAndSmallest.js)

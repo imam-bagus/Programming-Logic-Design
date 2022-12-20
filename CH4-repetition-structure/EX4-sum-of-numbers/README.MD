@@ -9,21 +9,33 @@ Design a program with a loop that asks the user to enter a series of positive nu
 ## Pseudocode
 
 ```
+Declare Integer numbers
+Declare Integer sum
 
+while numbers >= 0
+  Output "Enter a number : "
+  Input numbers
+
+  If numbers > 0 Then
+    Set sum = sum + numbers
+  End If
+End While
+
+Output sum
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](sumOfNumbers.cpp)
+- [Java](sumOfNumbers.java)
+- [Python](sumOfNumbers.py)
+- [PHP](sumOfNumbers.php)
+- [JavaScript](sumOfNumbers.js)

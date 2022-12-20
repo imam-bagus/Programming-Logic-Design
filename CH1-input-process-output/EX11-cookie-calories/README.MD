@@ -26,7 +26,7 @@ Output "Total calories consumed :", totalCalories
 
 ## Flowchart
 
-<img src="cookieCaloriesFlowchart.png" width="400" height="500">
+<img src="cookieCaloriesFlowchart.png"  >
 
 <hr>
 

@@ -19,21 +19,42 @@ Design a program that asks the user to enter values for mass and velocity, and t
 ## Pseudocode
 
 ```
+Module main()
+    Declare Real KE
+    Declare Real m
+    Declare Real v
 
+    Output "Enter mass :"
+    Input m
+    Output "Enter velocity :"
+    Input v
+
+    Set KE = kineticEnergy(m, v)
+
+    Output "Object's kinetic energy : ", KE
+End Module
+
+Function Real kineticEnergy(Real m, Real v)
+    Declare Real result
+
+    Set result = (0.5) * m * v ^ 2
+
+    Return result
+End Function
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](kineticEnergy.cpp)
+- [Java](kineticEnergy.java)
+- [Python](kineticEnergy.py)
+- [PHP](kineticEnergy.php)
+- [JavaScript](kineticEnergy.js)

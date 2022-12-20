@@ -13,21 +13,30 @@ where F is the Fahrenheit temperature and C is the Celsius temperature. Your pro
 ## Pseudocode
 
 ```
+Declare Real celcius
+Declare Real farenheit
 
+Set celcius = 0
+For celcius to 20
+  Set farenheit = (celcius * 9/5) + 32
+  Output "|Celcius|Farenheit|"
+  Output "|", celcius, "|", Farenheit. "|"
+  Set Celcius = Celcius + 1
+EndFor
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](celciusToFarenheitTable.cpp)
+- [Java](celciusToFarenheitTable.java)
+- [Python](celciusToFarenheitTable.py)
+- [PHP](celciusToFarenheitTable.php)
+- [JavaScript](celciusToFarenheitTable.js)

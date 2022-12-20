@@ -31,7 +31,7 @@ Output "College major : ", colMajor
 
 ## Flowchart
 
-<img src="personalInformationFlowchart.png" width="400" height="500">
+<img src="personalInformationFlowchart.png"  >
 
 <hr>
 

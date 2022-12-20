@@ -18,21 +18,51 @@ Design a program that calls the function in a loop that passes the values 1 thro
 ## Pseudocode
 
 ```
+Constant Real g = 9.8
 
+Module main()
+    Declare Real distance
+    Declare Real t
+    Declare Real counter
+    Declare Real maxCounter
+
+    Set counter = 1
+    Set maxCounter = 10
+    For counter To maxCounter Then
+
+        Set t = counter
+
+        Set distance = fallingDistance(t)
+
+        Output t, " seconds = ", distance , " m"
+
+        Set counter = counter + 1
+    End For
+
+End Module
+
+
+Function Real fallingDistance(Real t)
+    Declare Real result
+
+    Set result = (0.5) * g * t ^ 2
+
+    Return result
+End Function
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](fallingDistance.cpp)
+- [Java](fallingDistance.java)
+- [Python](fallingDistance.py)
+- [PHP](fallingDistance.php)
+- [JavaScript](fallingDistance.js)

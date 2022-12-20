@@ -14,21 +14,67 @@ Design a program that asks the user to enter a series of 20 numbers. The program
 ## Pseudocode
 
 ```
+Constant Integer SIZE = 20
+Declare Integer numbers[SIZE]
+Declare Integer index
+Declare Integer total
+Declare Integer lowest
+Declare Integer highest
+Declare Real average
 
+Set index = 0
+For index to SIZE - 1 Then
+    Output "Enter a number", index + 1, " : "
+    Input numbers[index]
+
+    Set total = total + numbers[index]
+
+    Set index = index + 1
+End For
+
+
+Set lowest = numbers[0]
+Set index = 1
+For index To SIZE - 1 Then
+    If numbers[index] < lowest Then
+        Set lowest = numbers[index]
+    Else
+
+    Set index = index + 1
+End For
+
+
+Set highest = numbers[0]
+Set index = 1
+For index To SIZE - 1 Then
+    If numbers[index] > highest Then
+        Set highest = numbers[index]
+    End If
+
+    Set index = index + 1
+End For
+
+Set average = total / SIZE
+
+
+Output "The lowest number in the array : ", lowest
+Output "The highest number in the array : ", highest
+Output "The total of the numbers in the array : ", total
+Output "The average of the numbers in the array : ", average
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="design/.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](numberAnalysisProgram.cpp)
+- [Java](numberAnalysisProgram.java)
+- [Python](numberAnalysisProgram.py)
+- [PHP](numberAnalysisProgram.php)
+- [JavaScript](numberAnalysisProgram.js)

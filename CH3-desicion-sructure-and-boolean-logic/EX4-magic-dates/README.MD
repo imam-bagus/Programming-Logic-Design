@@ -13,21 +13,39 @@ Design a program that asks the user to enter a month (in numeric form), a day, a
 ## Pseudocode
 
 ```
+Declare int month
+Declare int day
+Declare int year
+Declare int result
 
+Output "Enter a month :"
+Input month
+Output "Enter a day   :"
+Input day
+Output "Enter a year  :"
+Input year
+
+Set result = month * day
+
+If result == year Then
+    Output "the date is magic"
+Else
+    Output "the date is not magic"
+End If
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="magicDatesFlowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](magicDates.cpp)
+- [Java](magicDates.java)
+- [Python](magicDates.py)
+- [PHP](magicDates.php)
+- [JavaScript](magicDates.js)

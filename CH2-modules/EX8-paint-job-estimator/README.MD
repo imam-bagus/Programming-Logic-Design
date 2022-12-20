@@ -18,6 +18,44 @@ The program should display the following data:
 ## Pseudocode
 
 ```
+Module main()
+  Declare Real squareFeet
+  Declare Real gallonNeed
+  Declare Real pricePerGallon
+  Declare Real hoursLabor
+  Declare Real laborCharges
+  Declare Real costPaint
+  Declare Real totalCostPaintJob
+
+  Call getSquareFeetPricePaint(squareFeet, pricePerGallon)
+  Call processEstimator(gallonNeed, hoursLabor, costPaint, totalCostPaintJob, squareFeet, pricePerGallon)
+  Call printEstimator(gallonNeed, hoursLabor, costPaint, laborCharges, totalCostPaintJob)
+End Module
+
+Module getSquareFeetPricePaint(Real Ref squareFeet, Real Ref pricePerGallon)
+  Output "Enter a enter square feet :"
+  Input squareFeet
+
+  Output "price of the paint per gallon :"
+  Input pricePerGallon
+End Module
+
+Module processEstimator(Real Ref gallonNeed, Real Ref hoursLabor, Real Ref costPaint, Real Ref totalCostPaintJob, Real Ref squareFeet, Real Ref pricePerGallon)
+  Set gallonNeed = squareFeet / 115
+  Set hoursLabor = gallonNeed * 8
+  Set laborCharges = hoursLabor * 20.00
+  Set costPaint = gallonNeed * pricePerGallon
+  Set totalCostPaintJob = laborCharges + costPaint
+End Module
+
+Module printEstimator(Real Ref gallonNeed, Real Ref hoursLabor, Real Ref costPaint, Real Ref laborCharges, Real Ref totalCostPaintJob)
+  Output "number of gallons of paint required : ", gallonNeed
+  Output "hours of labor required : ", hoursLabor
+  Output "cost of the paint : $", costPaint
+  Output "labor charges : $", laborCharges
+  Output "total cost of the paint job : $", totalCostPaintJob
+End Module
+
 
 ```
 
@@ -25,14 +63,20 @@ The program should display the following data:
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="paintJobEstimatorFlowchart.png"  >
+
+<hr>
+
+## Hierarcy Chart
+
+<img src="dpaintJobEstimatorHierarchychart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](paintJobEstimator.cpp)
+- [Java](paintJobEstimator.java)
+- [Python](paintJobEstimator.py)
+- [PHP](paintJobEstimator.php)
+- [JavaScript](paintJobEstimator.js)

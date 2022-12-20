@@ -15,6 +15,19 @@ Then write another loop that displays the contents of the array
 ## Pseudocode
 
 ```
+Constant Integer SIZE = 6
+Declare Integer lotteryDigit[SIZE]
+Declare Integer index
+
+Set index = 0
+For index To SIZE Then
+    Set lotteryDigit[index] = random(0,9)
+End For
+
+Set index = 0
+For index To SIZE Then
+    Output lotteryDigit[index]
+End For
 
 ```
 
@@ -22,14 +35,14 @@ Then write another loop that displays the contents of the array
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="design/.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](lotteryNumberGenerator.cpp)
+- [Java](lotteryNumberGenerator.java)
+- [Python](lotteryNumberGenerator.py)
+- [PHP](lotteryNumberGenerator.php)
+- [JavaScript](lotteryNumberGenerator.js)

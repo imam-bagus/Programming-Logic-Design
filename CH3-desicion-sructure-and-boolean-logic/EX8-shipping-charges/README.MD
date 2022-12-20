@@ -17,21 +17,41 @@ Design a program that asks the user to enter the weight of a package and then di
 ## Pseudocode
 
 ```
+Declare Real weightPackage
+Declare Real shippingCharges
 
+Output "Enter a weight of a package :"
+Input weightPackage
+
+If weightPackage <= 2 Then
+    Set shippingCharges = 1.10
+Else
+    If weightPackage > 2 AND <= 6 Then
+        Set shippingCharges = 2.20
+    Else
+        If weightPackage > 6 AND <= 10 Then
+            Set shippingCharges = 3.70
+        Else
+            Set shippingCharges = 3.80
+        EndIf
+    EndIf
+EndIf
+
+Output "Shipping charges : $", shippingCharges
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="shippingChargesFlowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](shippingCharges.cpp)
+- [Java](shippingCharges.java)
+- [Python](shippingCharges.py)
+- [PHP](shippingCharges.php)
+- [JavaScript](shippingCharges.js)

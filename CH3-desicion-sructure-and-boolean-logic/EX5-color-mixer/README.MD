@@ -15,21 +15,66 @@ Design a program that prompts the user to enter the names of two primary colors 
 ## Pseudocode
 
 ```
+Declare String colorRed = "red"
+Declare String colorBlue = "blue"
+Declare String colorYellow = "yellow"
+Declare String inputColor1
+Declare String inputColor2
+Declare String secondaryColor
+Declare Boolean flag1
+Declare Boolean flag2
 
+Output "Enter a color 1 : "
+Input inputColor1
+Output "Enter a color 2 : "
+Input inputColor2
+
+If inputColor1 == colorRed OR inputColor1 == colorBlue OR inputColor1 == colorYellow Then
+    Set flag1 = true
+Else
+    Set flag1 = false
+EndIf
+
+If inputColor2 == colorRed OR inputColor2 == colorBlue OR inputColor2 == colorYellow Then
+    Set flag2 = true
+Else
+    Set flag2 = false
+EndIf
+
+If flag1 AND flag2 Then
+    If inputColor1 != inputColor2 Then
+        If inputColor1 == colorRed AND inputColor2 == colorBlue  OR  inputColor1 == colorBlue AND inputColor2 == colorRed Then
+            Set secondaryColor = "Purple"
+        Else
+            If inputColor1 == colorBlue AND inputColor2 == colorYellow  OR  inputColor1 == colorYellow AND inputColor2 == colorBlue Then
+                Set secondaryColor = "Green"
+            Else
+                If inputColor1 == colorRed AND inputColor2 == colorYellow  OR  inputColor1 == colorYellow AND inputColor2 == colorRed Then
+                    Set secondaryColor = "Orange"
+                EndIf
+            EndIf
+        EndIf
+        Output "Secondary Color :", secondaryColor
+    Else
+        Output "Please enter a different color !!"
+    EndIf
+Else
+    Output "Please enter a red, blue, or yellow !!"
+EndIf
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="colorMixerFlowchart.png >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](colorMixer.cpp)
+- [Java](colorMixer.java)
+- [Python](colorMixer.py)
+- [PHP](colorMixer.php)
+- [JavaScript](colorMixer.js)

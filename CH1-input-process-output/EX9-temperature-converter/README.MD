@@ -31,7 +31,7 @@ Output "Temperature is ", farenheit, " farenheit"
 
 ## Flowchart
 
-<img src="tempConvertFlowchart.png" width="400" height="500">
+<img src="tempConvertFlowchart.png"  >
 
 <hr>
 

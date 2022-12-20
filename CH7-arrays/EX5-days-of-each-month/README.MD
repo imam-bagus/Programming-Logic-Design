@@ -26,21 +26,29 @@ To produce the output specified, use a loop to step through the arrays getting t
 ## Pseudocode
 
 ```
+Declare Integer size = 12
+Declare String months[size] = "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+Declare Integer numberOfDays[size] = 31,28,31,30,31,30,31,31,30,31,30,31
+Declare Integer index
 
+Set index = 0
+For index To (size - 1) Then
+    Output months[index], " has ", numberOfDays[index], " days"
+End For
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="design/.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](daysOfEachMonth.cpp)
+- [Java](daysOfEachMonth.java)
+- [Python](daysOfEachMonth.py)
+- [PHP](daysOfEachMonth.php)
+- [JavaScript](daysOfEachMonth.js)

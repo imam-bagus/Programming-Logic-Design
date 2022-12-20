@@ -20,21 +20,78 @@ Below 60 = F
 ## Pseudocode
 
 ```
+Module main()
+    Declare Integer score
+    Declare Integer totalScore
+    Declare String grade
+    Declare Integer average
+    Declare Integer counter
+    Declare Integer maxCounter
 
+    Set counter = 1
+    Set maxCounter = 5
+    For counter To maxCounter Then
+        Output "Enter a score ", counter, " : "
+        Input score
+
+        Set totalScore = totalScore + score
+        Set grade = determineGrade(score)
+
+        Output "Score ", score, " : grade ", grade
+
+        Set counter = counter + 1
+    End For
+
+    Set average = calAverage(totalScore)
+
+    Output "Average : ", average
+End Module
+
+Function Integer calAverage(Integer totalScore)
+    Declare Integer average
+
+    Set average = totalScore / 5
+
+    Return average
+End Function
+
+Function String determineGrade(Integer score)
+    Declare String grade
+
+    If score >= 90 Then
+        Set grade = "A"
+    Else
+        If score >= 80 Then
+            Set grade = "B"
+        Else
+            If score >= 70 Then
+                Set grade = "C"
+            Else
+                If score >= 60 Then
+                    Set grade = "D"
+                Else
+                    Set grade = "F"
+                End If
+            End If
+        End If
+    End If
+
+    Return grade
+End Function
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](testAverageAndGrade.cpp)
+- [Java](testAverageAndGrade.java)
+- [Python](testAverageAndGrade.py)
+- [PHP](testAverageAndGrade.php)
+- [JavaScript](testAverageAndGrade.js)

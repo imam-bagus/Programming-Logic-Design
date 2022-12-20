@@ -24,7 +24,7 @@ One acre of land is equivalent to 43,560 square feet. Design a program that asks
 
 ## Flowchart
 
-<img src="landCalculationFlowchart.png" width="400" height="500">
+<img src="landCalculationFlowchart.png"  >
 
 <hr>
 

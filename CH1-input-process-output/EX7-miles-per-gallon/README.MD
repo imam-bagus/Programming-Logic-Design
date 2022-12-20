@@ -32,7 +32,7 @@ Output "Miles-per-Gallon : ", MPG
 
 ## Flowchart
 
-<img src="milesPerGallonFlowchart.png" width="400" height="500">
+<img src="milesPerGallonFlowchart.png"  >
 
 <hr>
 

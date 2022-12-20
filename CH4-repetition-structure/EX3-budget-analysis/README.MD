@@ -9,21 +9,56 @@ Design a program that asks the user to enter the amount that he or she has budge
 ## Pseudocode
 
 ```
+Declare Float budgeted
+Declare Float totalExpenses
+Declare Float expenses
+Declare Float amount
 
+Output "Enter a budgeted for a month : $"
+Input budgeted
+
+do
+
+  Output "Enter a expenses (or 0 for stop) : $"
+  Input expenses
+
+  Set totalExpenses = totalExpenses + expenses
+
+while expenses != 0
+
+Set amount = budgeted - totalExpenses
+
+If budgeted == totalExpenses Then
+
+  Output "Expenses & budget are same"
+
+Else
+
+  If budgeted < totalExpenses
+
+    Output "Total : $", amount, " (Expenses over budget)"
+
+  Else
+
+    Output "Total : $", amount, " (Expenses under budget)"
+
+  EndIf
+
+EndIf
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](budgetAnalysis.cpp)
+- [Java](budgetAnalysis.java)
+- [Python](budgetAnalysis.py)
+- [PHP](budgetAnalysis.php)
+- [JavaScript](budgetAnalysis.js)

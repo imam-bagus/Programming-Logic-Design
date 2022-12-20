@@ -21,6 +21,35 @@ represent the county tax rate (0.02) and the state tax rate (0.04) as named cons
 ## Pseudocode
 
 ```
+Module main()
+    Declare Real totalStateTax
+    Declare Real totalCountryTax
+    Declare Real totalSalesTax
+    Declare Real totalSale
+
+    Call inputTotalSale(totalSale)
+    Call processTax(totalSale, totalStateTax, totalCountryTax, totalSalesTax)
+    Call printTax(totalStateTax, totalCountryTax, totalSalesTax)
+End Module
+
+Module inputTotalSale(Real Ref totalSale)
+    Ouput "Total Sale: $"
+    Input totalSale
+End Module
+
+Module processTax(Real Ref totalSale, Real Ref totalStateTax, Real Ref totalCountryTax, Real Ref totalSalesTax)
+    Declare Real stateTax = 0.04
+    Declare Real countryTax = 0.02
+    Set totalStateTax = totalSale * stateTax
+    Set totalCountryTax = totalSale * countryTax
+    Set totalSalesTax = totalStateTax + totalCountryTax
+End Module
+
+Module printTax(Real Ref totalStateTax, Real Ref totalCountryTax, Real Ref totalSalesTax)
+    Output "State Sales Tax   : $", totalStateTax
+    Output "Country Sales Tax : $", totalCountryTax
+    Output "Total Sales Tax   : $", totalSalesTax
+End Module
 
 ```
 
@@ -28,7 +57,13 @@ represent the county tax rate (0.02) and the state tax rate (0.04) as named cons
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="monthlySalesTaxFlowchart.png"  >
+
+<hr>
+
+## Hierarcy Chart
+
+<img src="monthlySalesTaxHierarchyChart.png"  >
 
 <hr>
 

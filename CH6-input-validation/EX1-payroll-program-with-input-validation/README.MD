@@ -9,21 +9,46 @@ Design a payroll program that prompts the user to enter an employee’s hourly p
 ## Pseudocode
 
 ```
+Declare Real hourlyPayRate
+Declare Integer hoursWorked
+Declare Real grossPay
 
+Output "Enter a hourly pay rate : $"
+Input hourlyPayRate
+
+While hourlyPayRate < 7.50 OR hourlyPayRate > 18.25 Then
+    Output "ERROR: Pay rates must in the range of $7.50 through $18.25."
+    Output "Enter a hourly pay rate : $"
+    Input hourlyPayRate
+End While
+
+Output "Enter a number hours worked : "
+Input hoursWorked
+
+While hoursWorked < 0 OR hoursWorked > 40 Then
+    Output "ERROR: hours worked must in the range of 0 through 40."
+    Output "Enter a number hours worked :"
+    Input hoursWorked
+End While
+
+
+Set grossPay = hourlyPayRate * hoursWorked
+
+Output "The employee's Gross pay : $", grossPay
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="design/.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](payrollProgramWithInputValidation.cpp)
+- [Java](payrollProgramWithInputValidation.java)
+- [Python](payrollProgramWithInputValidation.py)
+- [PHP](payrollProgramWithInputValidation.php)
+- [JavaScript](payrollProgramWithInputValidation.js)

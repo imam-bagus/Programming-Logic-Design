@@ -9,21 +9,42 @@ Running on a particular treadmill you burn 3.9 calories per minute. Design a pro
 ## Pseudocode
 
 ```
+Declare Real calories = 3.9
+Declare Real totalCalories
+Declare Integer minutes
+Declare Integer maxMinutes = 30
 
+
+For minutes = 1 To maxMinutes
+
+  Set totalCalories = calories * minutes
+
+  Select minutes
+    Case 10:
+      Output "Calories Burned after ", minutes, " minutes : ", totalCalories
+    Case 15:
+      Output "Calories Burned after ", minutes, " minutes : ", totalCalories
+    Case 20:
+      Output "Calories Burned after ", minutes, " minutes : ", totalCalories
+    Case 25:
+      Output "Calories Burned after ", minutes, " minutes : ", totalCalories
+    Case 30:
+      Output "Calories Burned after ", minutes, " minutes : ", totalCalories
+EndFor
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](caloriesBurned.cpp)
+- [Java](caloriesBurned.java)
+- [Python](caloriesBurned.py)
+- [PHP](caloriesBurned.php)
+- [JavaScript](caloriesBurned.js)

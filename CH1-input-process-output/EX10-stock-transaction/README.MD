@@ -65,7 +65,7 @@ Output "Total profit or loss        : $", total
 
 ## Flowchart
 
-<img src="stockTransactionFlowchart.png" width="400" height="500">
+<img src="stockTransactionFlowchart.png"  >
 
 <hr>
 

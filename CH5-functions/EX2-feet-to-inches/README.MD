@@ -9,6 +9,26 @@ One feet equals 12 inches. Design a function named feetToInches that accepts a n
 ## Pseudocode
 
 ```
+Module Main()
+    Constant Integer EQUALS = 12
+    Declare Integer feet
+    Declare Integer inches
+
+    Output "Enter a feet :"
+    Input feet
+
+    Set inches = feetToInches(feet, EQUALS)
+
+    Output "Inches : ", inches
+End Module
+
+Function Integer feetToInches(Integer feet, Integer EQUALS)
+    Declare Integer result
+
+    Set result = EQUALS * feet
+
+    Return result
+End Function
 
 ```
 
@@ -16,14 +36,14 @@ One feet equals 12 inches. Design a function named feetToInches that accepts a n
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](feetToInches.cpp)
+- [Java](feetToInches.java)
+- [Python](feetToInches.py)
+- [PHP](feetToInches.php)
+- [JavaScript](feetToInches.js)

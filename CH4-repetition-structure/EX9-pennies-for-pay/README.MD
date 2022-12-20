@@ -9,21 +9,43 @@ Design a program that calculates the amount of money a person would earn over a 
 ## Pseudocode
 
 ```
+Declare Integer day
+Declare Integer days
+Declare Real salary
+Declare Real totalPay
 
+Output "Enter a days :"
+Input days
+
+Output "_____________________"
+Output "|  Day  |   salary  |"
+
+Set day = 1
+For day To days Then
+
+  Set salary = day / 100
+  Set totalPay = totalPay + salary
+
+  Output "|   ", day, "   |   $", salary, "   |"
+
+  Set day = day + 1
+EndFor
+
+Output "|  TOTAL  |   $", totalPay, " |"
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](penniesForPay.cpp)
+- [Java](penniesForPay.java)
+- [Python](penniesForPay.py)
+- [PHP](penniesForPay.php)
+- [JavaScript](penniesForPay.js)

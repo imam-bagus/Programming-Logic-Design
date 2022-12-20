@@ -1,9 +1,0 @@
-    Declare Real squareFeet
-    Declare Real acre
-    
-    Output "Enter a Square Feet :"
-    Input squareFeet
-
-    Set acre = squareFeet / 43,560
-
-    Output "Acres :",  acre

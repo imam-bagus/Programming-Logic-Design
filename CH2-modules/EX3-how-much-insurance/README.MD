@@ -10,20 +10,49 @@ Many financial experts advise that property owners should insure their homes or 
 
 ```
 
+Module main()
+    Declare Real replacementCost
+    Declare Real minimumInsurance = 0.8
+    Declare Real totalInsurance
+
+    Call inputReplacementCost(replacementCost)
+    Call calculateInsurance(totalInsurance, replacementCost, minimumInsurance)
+    Call printTotalInsurance(totalInsurance)
+End Module
+
+Module inputReplacementCost(Real Ref replacementCost)
+    Output "Enter a replacement cost : $"
+    Input replacementCost
+End Module
+
+Module calculateInsurance(Real Ref totalInsurance, Real Ref replacementCost, Real Ref minimumInsurance)
+Set totalInsurance = (replacementCost * minimumInsurance) + replacementCost
+End Module
+
+Module printTotalInsurance(Real Ref totalInsurance)
+    Output "Minimun amount insurance : $", totalInsurance
+End Module
+
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="howMuchInsuranceFlowchart.png"  >
+
+<hr>
+
+## Hierarcy Chart
+
+<img src="howMuchInsuranceHierarchyChart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](howMuchInsurance.cpp)
+- [Java](howMuchInsurance.java)
+- [Python](howMuchInsurance.py)
+- [PHP](howMuchInsurance.php)
+- [JavaScript](howMuchInsurance.js)

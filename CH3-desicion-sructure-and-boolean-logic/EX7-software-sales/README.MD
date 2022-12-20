@@ -17,21 +17,56 @@ Design a program that asks the user to enter the number of packages purchased. T
 ## Pseudocode
 
 ```
+Constant Integer PRICE = 99
 
+Declare Integer quantity
+Declare Real discount
+Declare Real total
+Declare Real totalAfterDiscount
+
+
+Output "Enter number of packages purchased :"
+Input quantity
+
+Set total = PRICE * quantity
+
+If quantity >= 10 AND quantity <= 19 Then
+    Set discount = total * 0.2
+Else
+    If quantity >= 20 AND quantity <= 49 Then
+        Set discount = total * 0.3
+    Else
+        If quantity >= 50 AND quantity <= 99 Then
+            Set discount = total * 0.4
+        else
+            If quantity >= 100 Then
+                Set discount = total * 0.5
+            else
+                Set discount = 0
+            EndIf
+        EndIf
+    EndIf
+EndIf
+
+Set totalAfterDiscount = total - discount
+
+Output "Total : $", total
+Output "Discount : $", discount
+Output "Total after discount : $", totalAfterDiscount
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="softwareSalesFlowchart.png >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](softwareSales.cpp)
+- [Java](softwareSales.java)
+- [Python](softwareSales.py)
+- [PHP](softwareSales.php)
+- [JavaScript](softwareSales.js)

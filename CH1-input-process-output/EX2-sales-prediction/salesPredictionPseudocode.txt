@@ -1,9 +1,0 @@
-Declare Real profit
-Declare Real totalSales
-
-Output "Enter a total sales : $"
-Input totalSales
-
-Set profit = totalSales * 0.23
-
-Output "Profit : $", profit

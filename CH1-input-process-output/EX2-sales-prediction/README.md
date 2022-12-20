@@ -26,7 +26,7 @@ Output "Profit : $", profit
 
 ## Flowchart
 
-<img src="salesPredictionFlowchart.png" width="400" height="500">
+<img src="salesPredictionFlowchart.png"  >
 
 <hr>
 

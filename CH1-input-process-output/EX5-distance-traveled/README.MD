@@ -34,7 +34,7 @@ Output "Distance the car travel in", time, " hours is : ", distance
 
 ## Flowchart
 
-<img src="distanceTravelledFlowchart.png" width="400" height="500">
+<img src="distanceTravelledFlowchart.png"  >
 
 <hr>
 

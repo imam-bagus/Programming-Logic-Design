@@ -37,7 +37,7 @@ Output "Total Sale        : $", totalSale
 
 ## Flowchart
 
-<img src="salesTaxFlowchart.png" width="400" height="500">
+<img src="salesTaxFlowchart.png"  >
 
 <hr>
 

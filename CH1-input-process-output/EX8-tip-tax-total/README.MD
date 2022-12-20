@@ -33,7 +33,7 @@ Output "Total     : $", total
 
 ## Flowchart
 
-<img src="tipTaxTotalFlowchart.png" width="400" height="500">
+<img src="tipTaxTotalFlowchart.png"  >
 
 <hr>
 

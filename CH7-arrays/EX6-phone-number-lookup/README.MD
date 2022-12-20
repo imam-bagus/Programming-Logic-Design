@@ -15,21 +15,46 @@ If the person is not found in the people array, the program should display a mes
 ## Pseudocode
 
 ```
+Constant Integer SIZE = 7
+Declare Integer index
+Declare String names[SIZE] = "bagus", "iky", "ramadhan", "fajar"
+Declare String phoneNumbers[SIZE] = "081111111111", "082222222222", "083000000000", "084444444444", "085555555555"
+Declare String personName
+Declare Boolean sentinel = TRUE
+Declare Boolean flag = FALSE
 
+Output "Enter a name : "
+Input personName
+
+Set index = 0
+While sentinel == TRUE && index <= SIZE - 1 Then
+    If names[index] == personName Then
+        Set sentinel = FALSE
+        Set flag = TRUE
+    Else
+        index = index + 1
+    End If
+End While
+
+If flag == TRUE Then
+    Output "Phone number of ", names[index], " is : ", phoneNumbers[index]
+Else
+    Output "Person is not found"
+End If
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="design/.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](phoneNumberLookup.cpp)
+- [Java](phoneNumberLookup.java)
+- [Python](phoneNumberLookup.py)
+- [PHP](phoneNumberLookup.php)
+- [JavaScript](phoneNumberLookup.js)

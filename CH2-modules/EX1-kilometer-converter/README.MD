@@ -11,21 +11,36 @@ Miles = Kilometers x 0.6214
 ## Pseudocode
 
 ```
+Module main()
+    Declare Real kilometer
 
+    Output "Enter a Distance in kilometers :"
+    Input kilometer
+
+    Call converts(kilometer)
+End Module
+
+Module converts(Real Ref kilometer)
+    Declare Real miles
+
+    Set miles = kilometer * 0.6214
+
+    Output "Distance in miles :", miles
+End Module
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="kilometerConverterFlowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](kilometerConverter.cpp)
+- [Java](kilometerConverter.java)
+- [Python](kilometerConverter.py)
+- [PHP](kilometerConverter.php)
+- [JavaScript](kilometerConverter.js)

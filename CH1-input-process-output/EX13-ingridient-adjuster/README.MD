@@ -40,7 +40,7 @@ Output "Need flour  :", totalFlour, " Cups"
 
 ## Flowchart
 
-<img src="ingridientAdjusterFlowchart.png" width="400" height="500">
+<img src="ingridientAdjusterFlowchart.png"  >
 
 <hr>
 

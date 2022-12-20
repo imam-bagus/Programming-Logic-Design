@@ -9,21 +9,42 @@ Design a program that generates 100 random numbers, and keeps a count of how man
 ## Pseudocode
 
 ```
+Declare Integer number
+Declare Integer even
+Declare Integer odd
+Declare Integer counter
+Declare Integer maxCounter
 
+Set counter = 1
+Set maxCounter = 100
+For counter To maxCounter Then
+    Set number = random(1,100)
+
+    If number MOD 2 == 0 Then
+        Set even = even + 1
+    Else
+        Set odd = odd + 1
+    End If
+
+    Set counter = counter + 1
+End For
+
+Output "Even : ", even
+Output "Odd : ", odd
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](oddEvenCounter.cpp)
+- [Java](oddEvenCounter.java)
+- [Python](oddEvenCounter.py)
+- [PHP](oddEvenCounter.php)
+- [JavaScript](oddEvenCounter.js)

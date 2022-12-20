@@ -9,21 +9,36 @@ A bug collector collects bugs every day for seven days. Design a program that ke
 ## Pseudocode
 
 ```
+Declare Integer collectBugs
+Declare Integer accumulator
+Declare Integer counter
 
+
+Set counter = 1
+While counter <= 7
+  Output "Enter number bugs collected today : ", counter
+  Input collectBugs
+
+  Set accumulator = accumulator + collectBugs
+
+  Set counter = counter + 1
+End While
+
+Output "Total Bugs collected during seven days : ", accumulator
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](bugCollector.cpp)
+- [Java](bugCollector.java)
+- [Python](bugCollector.py)
+- [PHP](bugCollector.php)
+- [JavaScript](bugCollector.js)

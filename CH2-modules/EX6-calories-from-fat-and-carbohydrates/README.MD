@@ -17,6 +17,42 @@ The nutritionist asks you to design a modular program that will make these calcu
 ## Pseudocode
 
 ```
+Module main()
+  Declare Integer fat
+  Declare Integer carbohydrates
+  Declare Integer caloriesFat
+  Declare Integer caloriesCarbohydrates
+
+  Call getFatCarbohydrates(fat, carbohydrates)
+  Call processCaloriesFat(fat, caloriesFat)
+  Call processCaloriesCarbohydrates(carbohydrates, caloriesCarbohydrates)
+  Call printCalories(caloriesFat, caloriesCarbohydrates)
+End Module
+
+
+Module getFatCarbohydrates(Integer Ref fat, Integer Ref carbohydrates)
+  Output "Enter a fat :"
+  Input fat
+
+  Output "Enter a carbohydrates :"
+  Input carbohydrates
+End Module
+
+
+Module processCaloriesFat(Integer Ref fat, Integer Ref caloriesFat)
+  Set caloriesFat = fat * 9
+End Module
+
+
+Module processCaloriesCarbohydrates(Integer Ref carbohydrates, Integer Ref caloriesCarbohydrates)
+  Set caloriesCarbohydrates = carbohydrates * 4
+End Module
+
+
+Module printCalories(Integer Ref caloriesFat, Integer Ref caloriesCarbohydrates)
+  Output "Calories From Fat :", caloriesFat
+  Output "Calories From Carbohydrates :", caloriesCarbohydrates
+End Module
 
 ```
 
@@ -24,14 +60,20 @@ The nutritionist asks you to design a modular program that will make these calcu
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="caloriesFromFatAndCarbohydratesHierarchychart.png >
+
+<hr>
+
+## Hierarcy Chart
+
+<img src="caloriesFromFatAndCarbohydratesHierarchychart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](caloriesFromFatAndCarbohydrates.cpp)
+- [Java](caloriesFromFatAndCarbohydrates.java)
+- [Python](caloriesFromFatAndCarbohydrates.py)
+- [PHP](caloriesFromFatAndCarbohydrates.php)
+- [JavaScript](caloriesFromFatAndCarbohydrates.js)

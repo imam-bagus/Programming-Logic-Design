@@ -14,21 +14,53 @@ Some nutritionists classify a food as “low fat” if less than 30 percent of i
 ## Pseudocode
 
 ```
+Declare Real fatGrams
+Declare Real calories
+Declare Real percentageCalories
 
+Output "Enter a fat grams : "
+Input fatGrams
+
+While fatGrams < 0 Then
+    Output "ERROR : Fat grams cannot under 0"
+    Output "Enter a fat grams : "
+    Input fatGrams
+EndWhile
+
+Output "Enter a calories : "
+Input calories
+
+While calories < 0 Then
+    Output "ERROR : Calories cannot under 0"
+    Output "Enter a calories : "
+    Input calories
+EndWhile
+
+While calories > fatGrams * 9 Then
+    Output "ERROR : Calories cannot exceed fat grams x 9"
+    Output "Enter a calories : "
+    Input calories
+EndWhile
+
+Set percentageCalories = (fatGrams * 9) / calories
+
+If percentageCalories < 0.3 Then
+    Output "Food is low in fat."
+EndIf
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="design/.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](fatGramCalories.cpp)
+- [Java](fatGramCalories.java)
+- [Python](fatGramCalories.py)
+- [PHP](fatGramCalories.php)
+- [JavaScript](fatGramCalories.js)

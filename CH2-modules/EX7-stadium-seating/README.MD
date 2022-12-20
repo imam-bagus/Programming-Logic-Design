@@ -9,21 +9,58 @@ There are three seating categories at a stadium. For a softball game, Class A se
 ## Pseudocode
 
 ```
+Module main()
+  Declare Integer ticketClassA
+  Declare Integer ticketClassB
+  Declare Integer ticketClassC
+  Declare Real amountIncome
 
+  Call getTicketSold(ticketClassA,ticketClassB,ticketClassC)
+  Call processSales(ticketClassA,ticketClassB,ticketClassC, amountIncome)
+  Call printAmountIncome(amountIncome)
+End Module
+
+
+Module getTicketSold(Integer Ref ticketClassA, Integer Ref ticketClassB, Integer Ref ticketClassC)
+  Output "How many tickets class A were sold :"
+  Input ticketClassA
+  Output "How many tickets class B were sold :"
+  Input ticketClassB
+  Output "How many tickets class C were sold :"
+  Input ticketClassC
+End Module
+
+
+Module processSales(Integer Ref ticketClassA, Integer Ref ticketClassB, Integer Ref ticketClassC, Real Ref amountIncome)
+  Set amountIncome = ticketClassA * 15
+  Set amountIncome = amountIncome + ticketClassB * 12
+  Set amountIncome = amountIncome + ticketClassC * 9
+End Module
+
+
+Module printAmountIncome(Real Ref amountIncome)
+   Output "amount income generated from ticket sales : $", amountIncome
+End Module
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="stadiumSeatingFlowchart.png"  >
+
+<hr>
+
+## Hierarcy Chart
+
+<img src="stadiumSeatingHierarchychart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](stadiumSeating.cpp)
+- [Java](stadiumSeating.java)
+- [Python](stadiumSeating.py)
+- [PHP](stadiumSeating.php)
+- [JavaScript](stadiumSeating.js)

@@ -22,21 +22,95 @@ When the program runs, it should do the following:
 ## Pseudocode
 
 ```
+Constant String cherries = "Cherries"
+Constant String oranges = "Oranges"
+Constant String plums = "Plums"
+Constant String bells = "Bells"
+Constant String melons = "Melons"
+Constant String bars = "Bars"
 
+Module main()
+    Declare Real userMoney
+    Declare Real totalUserMoney
+    Declare Real totalWon
+    Declare Real totalAmountWon
+    Declare Integer sameWord
+    Declare String word1
+    Declare String word2
+    Declare String word3
+    Declare String playAgain
+
+    Do
+        Output "Enter Money : $"
+        Input userMoney
+
+        Set word1 = getWord(random(1, 6))
+        Set word2 = getWord(random(1, 6))
+        Set word3 = getWord(random(1, 6))
+
+        If word1 == word2 Then
+            Set sameWord = sameWord + 1
+        End If
+
+        If word2 == word3 Then
+            Set sameWord = sameWord + 1
+        End If
+
+        If word3 == word1 Then
+            Set sameWord = sameWord + 1
+        End If
+
+        Set totalUserMoney = totalUserMoney + userMoney
+        Set totalWon = userMoney * sameWord
+        Set totalAmountWon = totalAmountWon + totalWon
+
+        Output word1, " | ", word2, " | ", word3
+        Output "You won $", totalWon
+
+        Output "Enter 'Y' To Play again or 'N' for print"
+        Input playAgain
+
+        Set sameWord = 0
+    While playAgain == "Y"
+
+    Output "total amount money entered : $", totalUserMoney
+    Output "total amount won : $", totalAmountWon
+End Module
+
+Function String getWord(Integer number)
+    Declare String result
+
+    Select number
+        Case 1 :
+            result = cherries
+        Case 2 :
+            result = oranges
+        Case 3 :
+            result = plums
+        Case 4 :
+            result = bells
+        Case 5 :
+            result = melons
+        Case 6 :
+            result = bars
+    End Select
+
+    Return result
+End Function
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](slotMachineSimulation.cpp)
+- [Java](slotMachineSimulation.java)
+- [Python](slotMachineSimulation.py)
+- [PHP](slotMachineSimulation.php)
+- [JavaScript](slotMachineSimulation.js)

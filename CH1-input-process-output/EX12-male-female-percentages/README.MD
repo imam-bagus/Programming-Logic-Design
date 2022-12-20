@@ -35,7 +35,7 @@ Output "Percentage Females student :", percentageFemale, "%"
 
 ## Flowchart
 
-<img src="maleFemalePercentagesFlowchart.png" width="400" height="500">
+<img src="maleFemalePercentagesFlowchart.png"  >
 
 <hr>
 

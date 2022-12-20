@@ -9,21 +9,57 @@ Design a program that uses nested loops to collect data and calculate the averag
 ## Pseudocode
 
 ```
+Declare Integer years
+Declare Integer year
+Declare Integer month
+Declare Integer months
+Declare Integer totalMonths
+Declare Real inchesRainfall
+Declare Real totalInchesRainfall
+Declare Real averageInchesRainfall
 
+Output "Enter a Number of years :"
+Input years
+
+Set months = 12
+
+Set year = 1
+For year to years
+
+  Set month = 1
+  For month to months
+
+    Output "Enter a the inches of rainfall month ", month, "/", year
+    Input inchesRainfall
+
+    Set totalInchesRainfall =  totalInchesRainfall + inchesRainfall
+
+    Set month = month + 1
+  EndFor
+
+Set years = years + 1
+EndFor
+
+Set averageInchesRainfall = totalInchesRainfall / years
+Set totalMonths = months * years
+
+Output "number of months           :", totalMonths
+Output "Total inches of rainfall   :", totalInchesRainfall
+Output "average rainfall per month :", averageInchesRainfall
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](averageRainfall.cpp)
+- [Java](averageRainfall.java)
+- [Python](averageRainfall.py)
+- [PHP](averageRainfall.php)
+- [JavaScript](averageRainfall.js)

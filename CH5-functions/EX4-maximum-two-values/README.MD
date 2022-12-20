@@ -9,21 +9,46 @@ Design a function named max that accepts two integer values as arguments and ret
 ## Pseudocode
 
 ```
+Module main()
+    Declare Integer value1
+    Declare Integer value2
+    Declare Integer greater
 
+    Output "Enter a number 1 : "
+    Input value1
+    Output "Enter a number 2 : "
+    Input value2
+
+    Set greater = max(value1, value2)
+
+    Output "Greater number is :", greater
+End Module
+
+Function Integer max(Integer value1, Integer value2)
+    Declare Integer result
+
+    If value1 >= value2 Then
+        Set result = value1
+    Else
+        Set result = value2
+    EndIf
+
+    Return result
+End Function
 ```
 
 <hr>
 
 ## Flowchart
 
-<img src="design/.png" width="400" height="500">
+<img src="Flowchart.png"  >
 
 <hr>
 
 ## Source Code
 
-- [C++](source-code/.cpp)
-- [Java](source-code/.java)
-- [Python](source-code/.py)
-- [PHP](source-code/.php)
-- [JavaScript](source-code/.js)
+- [C++](maximumOfTwoValues.cpp)
+- [Java](maximumOfTwoValues.java)
+- [Python](maximumOfTwoValues.py)
+- [PHP](maximumOfTwoValues.php)
+- [JavaScript](maximumOfTwoValues.js)
