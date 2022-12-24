@@ -158,6 +158,72 @@ void modifyRecord()
     } while (sentinel == "Y");
 }
 
+void deleteRecord()
+{
+    fstream phoneBookRecord;
+    fstream tempFile;
+
+    string name;
+    string phoneNumber;
+    string deletedName;
+    string sentinel = "N";
+    bool flag;
+
+    do
+    {
+        flag = false;
+        phoneBookRecord.open("phone-book.dat");
+        tempFile.open("temp.dat");
+
+        cout << "Enter a name of you want deleted ?";
+        cin >> deletedName;
+
+        while (getline(phoneBookRecord, name, ','))
+        {
+            if (name == deletedName)
+            {
+                getline(phoneBookRecord, phoneNumber, ',');
+                flag = true;
+            }
+            else
+            {
+                tempFile << name << ',';
+                getline(phoneBookRecord, phoneNumber, ',');
+                tempFile << phoneNumber << ',';
+            }
+        }
+
+        if (flag)
+        {
+            cout << "Record has Been Deleted !!!";
+        }
+        else
+        {
+            cout << "Record not found !!!";
+        }
+
+        cout << "Do you want to delete again ? 'Y' or 'N'";
+        cin >> sentinel;
+
+        phoneBookRecord.close();
+        tempFile.close();
+
+    } while (sentinel == "Y");
+
+    ofstream newPhoneBookRecord("phone-book.dat");
+    ifstream readTempFile("temp.dat");
+
+    while (getline(readTempFile, name, ','))
+    {
+        newPhoneBookRecord << name << ',';
+        getline(readTempFile, phoneNumber, ',');
+        newPhoneBookRecord << phoneNumber << ',';
+    }
+
+    newPhoneBookRecord.close();
+    readTempFile.close();
+}
+
 int main()
 {
     int selection;
@@ -184,6 +250,9 @@ int main()
             break;
         case 3:
             modifyRecord();
+            break;
+        case 4:
+            deleteRecord();
             break;
         default:
             selection = 5;
