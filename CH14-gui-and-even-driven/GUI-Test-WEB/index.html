@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="hourWorked">Enter the number hours worked :</label>
+      <input type="text" id="hourWorked" name="hourWorked" />
+      <br />
+      <br />
+      <label for="payRate">Enter a hourly pay rate :</label>
+      <input type="text" id="payRate" name="payRate" />
+      <br />
+      <br />
+      <label for="grossPay">The Gross pay is :</label>
+      <span id="grossPay" name="grossPay"></span>
+      <br />
+      <br />
+      <button type="button" onclick="calculate()">Calculate Gross Pay</button>
+      <button type="button" onclick="location.reload()">Reset</button>
+    </form>
+
+    <script>
+      function calculate() {
+        let hourWorked;
+        let grossPay;
+        let wages;
+
+        hourWorked = parseInt(document.getElementById("hourWorked").value);
+        grossPay = parseInt(document.getElementById("payRate").value);
+
+        wages = grossPay * hourWorked;
+
+        document.getElementById("grossPay").innerHTML = "$" + wages;
+      }
+    </script>
+  </body>
+</html>

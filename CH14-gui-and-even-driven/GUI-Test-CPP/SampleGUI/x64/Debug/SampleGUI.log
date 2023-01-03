@@ -1,0 +1,4 @@
+﻿  MyForm.cpp
+C:\Dev\Programming-Logic-Design\CH14-gui-and-even-driven\Test\SampleGUI\MyForm.cpp(11,1): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  SampleGUI.vcxproj -> C:\Dev\Programming-Logic-Design\CH14-gui-and-even-driven\Test\SampleGUI\x64\Debug\SampleGUI.exe

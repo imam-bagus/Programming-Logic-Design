@@ -1,0 +1,5 @@
+C:\Dev\Programming-Logic-Design\CH14-gui-and-even-driven\Test\SampleGUI\x64\Debug\SampleGUI.vcxproj.AssemblyReference.cache
+C:\Dev\Programming-Logic-Design\CH14-gui-and-even-driven\Test\SampleGUI\x64\Debug\SampleGUI.vcxproj.SuggestedBindingRedirects.cache
+C:\Dev\Programming-Logic-Design\CH14-gui-and-even-driven\Test\SampleGUI\x64\Debug\SampleGUI.exe
+C:\Dev\Programming-Logic-Design\CH14-gui-and-even-driven\Test\SampleGUI\x64\Debug\SampleGUI.MyForm.resources
+C:\Dev\Programming-Logic-Design\CH14-gui-and-even-driven\Test\SampleGUI\x64\Debug\SampleGUI.vcxproj.GenerateResource.cache
