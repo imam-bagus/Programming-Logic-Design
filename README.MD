@@ -1,4 +1,4 @@
-# Programming Logic and Design
+# About
 
 This project is an implementation of a case exercise from the book "Starting out with Programming Logic And Design - 4th edition - Tony Gaddis".
 
